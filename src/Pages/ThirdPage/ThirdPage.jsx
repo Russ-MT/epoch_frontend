@@ -14,13 +14,7 @@ function ThirdPage(props) {
       <div className="third-page" ref={currRef}>
         {isInView && (
           <div className="third-page--container">
-            <motion.div
-              className="article"
-              // initial={{ y: isInView ? "-1000px" : 0 }}
-              // animate={{ y: isInView ? 0 : "-1000px" }}
-              // transition={{ duration: 1 }}
-              // style={{ overflow: "hidden" }}
-            >
+            <motion.div className="article">
               <div className="h1--container" style={{ overflow: "hidden" }}>
                 <motion.h1
                   className="article--heading targetDiv"
@@ -86,9 +80,6 @@ function ThirdPage(props) {
                 </motion.button>
               </div>
             </motion.div>
-            {/* <div className="particle-motion">
-              <FractalTree />
-            </div> */}
           </div>
         )}
       </div>

@@ -23,13 +23,9 @@ function FirstPage(props) {
     ScrollTrigger.create({
       animation: timeln,
       trigger: currRef.current,
-      // start: "top top",
-      // end: "bottom center",
+
       scrub: true,
     });
-
-    // ScrollTrigger.refresh();
-    // ScrollTrigger.update();
   });
 
   return (
@@ -45,21 +41,7 @@ function FirstPage(props) {
             </div>
           </div>
           <div className="lower--container">
-            <motion.img
-              src="img/example.webp"
-              alt="test"
-              // animate={{
-              //   y: "-100px",
-              // }}
-              // initial={{
-              //   y: 0,
-              // }}
-              // transition={{
-              //   duration: 1,
-              // }}
-
-              ref={imgRef}
-            />
+            <motion.img src="img/example.webp" alt="test" ref={imgRef} />
             <div className="right--container">
               <p className="first-page--body">
                 Antinomy offers a wide range of services that apply to many

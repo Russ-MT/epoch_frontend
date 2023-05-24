@@ -7,19 +7,6 @@ import { useState, useEffect } from "react";
 
 function Navbar(props) {
   const { bgColor } = useSelector((state) => state.bgColor);
-  const [click, setClick] = useState(false);
-  // const [path, setPath] = useState("");
-  // const location = useLocation();
-
-  // useEffect(() => {
-  //   if (location.pathname) {
-  //     setPath(location.pathname);
-  //   }
-  // }, []);
-
-  const handleClick = () => {
-    setClick((state) => !state);
-  };
 
   return (
     <motion.header
@@ -29,11 +16,6 @@ function Navbar(props) {
       exit={{ y: 0 }}
       transition={{ duration: 0.5 }}
     >
-      {/* <div
-        // id="navbar"
-        className="header--container"
-        // style={{ backgroundColor: bgColor}}
-      >*/}
       <div className="nav--container">
         <div
           className="logo"
@@ -49,7 +31,6 @@ function Navbar(props) {
               color: bgColor === "black" ? "white" : "black",
             })}
             className="nav--link"
-            onClick={() => handleClick()}
           >
             Home
           </NavLink>
@@ -60,7 +41,6 @@ function Navbar(props) {
               color: bgColor === "black" ? "white" : "black",
             })}
             className="nav--link"
-            onClick={() => handleClick()}
           >
             About
           </NavLink>
@@ -71,7 +51,6 @@ function Navbar(props) {
               color: bgColor === "black" ? "white" : "black",
             })}
             className="nav--link"
-            onClick={() => handleClick()}
           >
             Socials
           </NavLink>
@@ -82,12 +61,10 @@ function Navbar(props) {
               color: bgColor === "black" ? "white" : "black",
             })}
             className="nav--link"
-            onClick={() => handleClick()}
           >
             Careers
           </NavLink>
         </div>
-        {/* {/* </div> */}
       </div>
     </motion.header>
   );

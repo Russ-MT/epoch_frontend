@@ -85,38 +85,6 @@ function SecondPage(props) {
             </div>
           </motion.div>
         </div>
-        {/* <div className="lower--container--dv">
-          <motion.div
-            className="lower--card card--six"
-            onMouseEnter={() => setIsHovered(true)}
-            onMouseLeave={() => setIsHovered(false)}
-          >
-            <h1>"WE'VE GOT ARTISTS"</h1>
-            <p>
-              They can draw ofcourse. Character development, 3D , any kind of
-              art.
-            </p>
-            <div className="lower--part--second">
-              <h1 className="num">03</h1>
-              <h1 className="num">&rarr;</h1>
-            </div>
-          </motion.div>
-          <motion.div
-            className="lower--card card--seven"
-            onMouseEnter={() => setIsHovered(true)}
-            onMouseLeave={() => setIsHovered(false)}
-          >
-            <h1>"WE'VE GOT ARTISTS"</h1>
-            <p>
-              They can draw ofcourse. Character development, 3D , any kind of
-              art.
-            </p>
-            <div className="lower--part--second">
-              <h1 className="num">03</h1>
-              <h1 className="num">&darr;</h1>
-            </div>
-          </motion.div>
-        </div> */}
       </section>
     </div>
   );
