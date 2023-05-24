@@ -1,0 +1,219 @@
+.second--container {
+  height: 150vh;
+  margin-top: 25px;
+  position: relative;
+  .main--container {
+    width: 95%;
+    height: 40%;
+    margin: 0 auto;
+    display: flex;
+    overflow: hidden;
+    border-top: 1px solid black;
+
+    .left--container {
+      width: 60%;
+      height: 70%;
+
+      // border: 1px solid black;
+      padding: 100px 0 0 20px;
+      // text-align: center;
+
+      h1 {
+        font-family: "Archivo", sans-serif;
+        font-weight: 200;
+        font-size: 3rem;
+        margin: 0;
+        line-height: 45px;
+      }
+
+      .soft--header {
+        color: rgb(111, 111, 111);
+      }
+
+      .main--header {
+        color: black;
+      }
+    }
+
+    .right--container {
+      width: 40%;
+      height: 100%;
+      display: flex;
+      // border: 1px solid black;
+      // border-left: 2px solid black;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        // width: 100%;
+        // height: 100%;
+        background-size: cover;
+        background-position: center;
+      }
+    }
+  }
+
+  .second--main--container {
+    // position: absolute;
+    height: 40%;
+    width: 100%;
+    // border: 1px solid black;
+    margin-top: 20vh;
+
+    .card--container {
+      display: flex;
+      // flex-wrap: wrap;
+      height: 60%;
+      padding: 0 25px;
+      // border: 1px solid black;
+
+      .card {
+        width: 50%;
+        height: 100%;
+        border: 1px solid rgb(255, 255, 255);
+        margin: 0;
+        border-radius: 10px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        color: white;
+        position: relative;
+
+        h1 {
+          font-family: "Archivo", sans-serif;
+          font-size: 1.5rem;
+          font-weight: 200;
+          padding: 10px;
+          margin: 5px 0;
+        }
+
+        p {
+          font-weight: 100;
+          font-size: 1rem;
+          font-family: "Questrial", sans-serif;
+          padding: 10px;
+        }
+        .lower--part {
+          display: flex;
+          justify-content: space-between;
+          // border: 1px solid white;
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+          .num {
+            font-family: "Archivo", sans-serif;
+            font-size: 2rem;
+            font-weight: 200;
+            padding: 10px;
+            margin: 5px 0;
+            // border: 1px solid black;
+          }
+        }
+      }
+
+      // bottom: 10%;
+      .card--one {
+        border: none;
+        text-align: start;
+        box-shadow: none;
+        margin: 10px;
+        width: 18%;
+        // border: 1px solid black;s
+
+        h1 {
+          font-family: "Archivo", sans-serif;
+          font-weight: 200;
+          font-size: 5rem;
+          // padding-left: 10%;
+
+          // margin-top: 40px;
+          color: rgba(0, 0, 0, 0.747);
+          // color: transparent;
+          // -webkit-text-stroke: 2px black;
+        }
+      }
+
+      .card--two {
+        background-color: rgba(0, 0, 0, 0.899);
+      }
+
+      .card--three {
+        background-color: rgba(0, 0, 0, 0.899);
+      }
+
+      .card--four {
+        width: 25%;
+        background-color: rgb(0, 0, 184);
+      }
+
+      .card--five {
+        width: 25%;
+        background-color: rgb(0, 0, 184);
+      }
+
+      .card:hover {
+        cursor: pointer;
+      }
+    }
+
+    .lower--container--dv {
+      height: 50%;
+      // width: 100%;
+      // border: 1px solid black;
+      display: flex;
+      flex-direction: row;
+      padding: 10px 25px;
+
+      .lower--card {
+        width: 50%;
+        height: 100%;
+        // border: 1px solid rgb(0, 0, 0);
+        margin: 0 5px;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+          rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+        color: rgb(0, 0, 0);
+        position: relative;
+
+        h1 {
+          font-family: "Archivo", sans-serif;
+          font-size: 1.5rem;
+          font-weight: 200;
+          padding: 10px;
+          margin: 5px 0;
+        }
+
+        p {
+          font-weight: 100;
+          font-size: 1rem;
+          font-family: "Questrial", sans-serif;
+          padding: 10px;
+        }
+        .lower--part--second {
+          display: flex;
+          justify-content: space-between;
+          // border: 1px solid white;
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+          .num {
+            font-family: "Archivo", sans-serif;
+            font-size: 2rem;
+            font-weight: 200;
+            padding: 10px;
+            margin: 5px 0;
+            // border: 1px solid black;
+          }
+        }
+      }
+
+      .card--six {
+        width: 25%;
+        background-color: rgba(255, 255, 255, 0.861);
+      }
+
+      .card--seven {
+        width: 50%;
+        background-color: rgba(255, 255, 255, 0.874);
+      }
+    }
+  }
+}

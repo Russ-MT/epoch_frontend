@@ -1,0 +1,22 @@
+footer {
+  background-color: rgb(255, 255, 255);
+
+  .footer--container {
+    height: 50vh;
+    width: 100%;
+    position: relative;
+    .footer-paragraph {
+      text-align: center;
+      position: absolute;
+      color: #000000c8;
+      bottom: 10%;
+      width: 100%;
+      font-family: "Poppins", sans-serif;
+      font-weight: 200;
+      font-size: 12px;
+      p {
+        margin: 0;
+      }
+    }
+  }
+}
