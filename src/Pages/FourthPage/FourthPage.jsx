@@ -172,7 +172,7 @@ function FourthPage() {
       <>
          <div ref={scrollRef} className="experiment_container">
             <div className="experiment_sticky">
-               <h1 className="experiment_header">Our Experiments</h1>
+               <h1 className="experiment_header">OUR EXPERIMENTS 🧪</h1>
                <div ref={listRef} className="experiment_list">
                   <div
                      className="experiment_item"
@@ -185,10 +185,25 @@ function FourthPage() {
                         alt="Photo"
                      />
                      {isHovered && (
-                        <div className="experiment_overlay">
-                           <h2>Hover Text</h2>
-                           <p>Additional description</p>
-                        </div>
+                        <>
+                           <motion.div
+                              className="experiment_overlay"
+                              initial={{ y: "-30px" }}
+                              animate={{ y: "0" }}
+                              transition={{ duration: 0.5 }}
+                           >
+                              <a href="#" className="experiment_overlay--discover">
+                                 EP0CH
+                              </a>
+                              <a href="#" className="experiment_overlay--discover">
+                                 DISCOVER
+                              </a>
+                              <div className="experiment_item--link">
+                                 <h4>The Name</h4>
+                                 <p>The description</p>
+                              </div>
+                           </motion.div>
+                        </>
                      )}
                   </div>
                   <div
@@ -202,10 +217,25 @@ function FourthPage() {
                         alt="Photo"
                      />
                      {isHovered && (
-                        <div className="experiment_overlay">
-                           <h2>Hover Text</h2>
-                           <p>Additional description</p>
-                        </div>
+                        <>
+                           <motion.div
+                              className="experiment_overlay"
+                              initial={{ y: "-30px" }}
+                              animate={{ y: "0" }}
+                              transition={{ duration: 0.5 }}
+                           >
+                              <a href="#" className="experiment_overlay--discover">
+                                 EP0CH
+                              </a>
+                              <a href="#" className="experiment_overlay--discover">
+                                 DISCOVER
+                              </a>
+                              <div className="experiment_item--link">
+                                 <h4>The Name</h4>
+                                 <p>The description</p>
+                              </div>
+                           </motion.div>
+                        </>
                      )}
                   </div>
                   <div
@@ -219,10 +249,25 @@ function FourthPage() {
                         alt="Photo"
                      />
                      {isHovered && (
-                        <div className="experiment_overlay">
-                           <h2>Hover Text</h2>
-                           <p>Additional description</p>
-                        </div>
+                        <>
+                           <motion.div
+                              className="experiment_overlay"
+                              initial={{ y: "-30px" }}
+                              animate={{ y: "0" }}
+                              transition={{ duration: 0.5 }}
+                           >
+                              <a href="#" className="experiment_overlay--discover">
+                                 EP0CH
+                              </a>
+                              <a href="#" className="experiment_overlay--discover">
+                                 DISCOVER
+                              </a>
+                              <div className="experiment_item--link">
+                                 <h4>The Name</h4>
+                                 <p>The description</p>
+                              </div>
+                           </motion.div>
+                        </>
                      )}
                   </div>
                   <div
@@ -236,10 +281,25 @@ function FourthPage() {
                         alt="Photo"
                      />
                      {isHovered && (
-                        <div className="experiment_overlay">
-                           <h2>Hover Text</h2>
-                           <p>Additional description</p>
-                        </div>
+                        <>
+                           <motion.div
+                              className="experiment_overlay"
+                              initial={{ y: "-30px" }}
+                              animate={{ y: "0" }}
+                              transition={{ duration: 0.5 }}
+                           >
+                              <a href="#" className="experiment_overlay--discover">
+                                 EP0CH
+                              </a>
+                              <a href="#" className="experiment_overlay--discover">
+                                 DISCOVER
+                              </a>
+                              <div className="experiment_item--link">
+                                 <h4>The Name</h4>
+                                 <p>The description</p>
+                              </div>
+                           </motion.div>
+                        </>
                      )}
                   </div>
                </div>

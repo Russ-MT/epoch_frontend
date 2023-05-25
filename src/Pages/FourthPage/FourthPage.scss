@@ -187,6 +187,10 @@
    &_header {
       text-align: center;
       font-size: 4rem;
+      font-family: "Questrial", sans-serif;
+      -webkit-text-stroke: 2px #000000;
+      color: transparent;
+      font-size: 5rem;
    }
    &_sticky {
       position: sticky;
@@ -194,7 +198,7 @@
       width: 100%;
       height: 80vh;
       //  border: 2px solid black;
-       padding: 0rem 3rem;
+      padding: 0rem 3rem;
    }
    &_list {
       display: flex;
@@ -223,24 +227,32 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background-color: rgba(0, 0, 0, 0.5);
       border-radius: 30px;
       color: #fff;
+      font-family: "Questrial", sans-serif;
       display: flex;
+      flex-wrap: wrap;
       justify-content: space-between;
       align-items: flex-start;
       opacity: 0;
       transition: opacity 0.3s ease;
       box-sizing: border-box;
-      padding: 1rem;
-
-      h2 {
-         font-size: 24px;
-         margin-bottom: 10px;
-      }
-
-      p {
-         font-size: 16px;
-      }
-   }
+      padding: 2rem 2.5rem 0; 
+    }
+    &_overlay--discover {
+      text-decoration: none;
+       font-size: 2rem;
+       font-weight: 500;
+       color: white;
+    }
+    &_item--link {
+        height: 10%;
+        width: 100%;
+        background-color: rgba($color: black, $alpha: 0.5);
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        align-self: flex-end;
+    }
 }
