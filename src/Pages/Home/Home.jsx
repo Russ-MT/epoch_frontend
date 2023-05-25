@@ -9,7 +9,6 @@ import FifthPage from "../FifthPage/FifthPage";
 import { useInView, motion } from "framer-motion";
 import { useDispatch } from "react-redux";
 import { changeBgColor } from "../../features/BackgroundColor/BackgroundColor";
-import SecondHelper from "../SecondHelper/SecondHelper";
 
 function Home(props) {
   const currRef = React.useRef(null);
@@ -33,14 +32,11 @@ function Home(props) {
         transition={{ duration: 1 }}
         ref={currRef}
       >
-        {/* <div> */}
         <FirstPage />
         <SecondPage />
-        <SecondHelper />
         <ThirdPage />
         <FourthPage />
         <FifthPage />
-        {/* </div> */}
       </motion.div>
     </>
   );

@@ -1,31 +1,37 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./Navbar.scss";
 import { NavLink, useLocation } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { motion } from "framer-motion";
-import { useState, useEffect } from "react";
 
 function Navbar(props) {
   const { bgColor } = useSelector((state) => state.bgColor);
+  // const [headerAnimation, setHeaderAnimation] = useState(false);
+  // const location = useLocation();
+
+  // useEffect(() => {
+  //   setHeaderAnimation(false); // Reset animation state on location change
+  // }, [location]);
+
+  // const handleNavClick = () => {
+  //   setHeaderAnimation(true); // Start the header animation
+  // };
+
+  // console.log(headerAnimation);
 
   return (
-    <motion.header
-      style={{ backgroundColor: bgColor }}
-      initial={{ y: "-500px" }}
-      animate={{ y: 0 }}
-      exit={{ y: 0 }}
-      transition={{ duration: 0.5 }}
-    >
+    <motion.header style={{ backgroundColor: bgColor }}>
       <div className="nav--container">
         <div
           className="logo"
           style={{ color: bgColor === "black" ? "white" : "black" }}
         >
-          LOGO
+          epoch
         </div>
         <div className="nav--links">
           <NavLink
             to="/"
+            // onClick={handleNavClick}
             style={({ isActive }) => ({
               textDecoration: isActive ? "underline" : "none",
               color: bgColor === "black" ? "white" : "black",
@@ -36,6 +42,7 @@ function Navbar(props) {
           </NavLink>
           <NavLink
             to="about"
+            // onClick={handleNavClick}
             style={({ isActive }) => ({
               textDecoration: isActive ? "underline" : "none",
               color: bgColor === "black" ? "white" : "black",
@@ -45,7 +52,19 @@ function Navbar(props) {
             About
           </NavLink>
           <NavLink
+            to="services"
+            // onClick={handleNavClick}
+            style={({ isActive }) => ({
+              textDecoration: isActive ? "underline" : "none",
+              color: bgColor === "black" ? "white" : "black",
+            })}
+            className="nav--link"
+          >
+            Services
+          </NavLink>
+          <NavLink
             to="socials"
+            // onClick={handleNavClick}
             style={({ isActive }) => ({
               textDecoration: isActive ? "underline" : "none",
               color: bgColor === "black" ? "white" : "black",
@@ -56,6 +75,7 @@ function Navbar(props) {
           </NavLink>
           <NavLink
             to="career"
+            // onClick={handleNavClick}
             style={({ isActive }) => ({
               textDecoration: isActive ? "underline" : "none",
               color: bgColor === "black" ? "white" : "black",

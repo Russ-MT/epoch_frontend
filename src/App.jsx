@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import Footer from "./Components/Footer/Footer";
 import About from "./Pages/About/About";
 import Lenis from "@studio-freight/lenis";
+import Services from "./Pages/Services/Services";
 
 const lenis = new Lenis({
   duration: 2,
@@ -26,6 +27,7 @@ function App(props) {
       <Routes>
         <Route index element={<Home />}></Route>
         <Route path="about" element={<About />}></Route>
+        <Route path="services" element={<Services />}></Route>
       </Routes>
       <Footer />
     </BrowserRouter>

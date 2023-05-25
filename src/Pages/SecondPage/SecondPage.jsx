@@ -23,7 +23,10 @@ function SecondPage(props) {
           <h1 className="soft--header">STORIES,</h1>
           <h1 className="soft--header">INNOVATIVE & TECHNOLOGY,</h1>
           <h1 className="main--header">
-            A PLACE FOR EXCITEMENTS & EXPERIMENTS
+            A PLACE FOR <span>EXCITEMENTS</span> &{" "}
+            <span style={{ backgroundColor: "rgb(0, 0, 184)", color: "white" }}>
+              EXPERIMENTS
+            </span>{" "}
           </h1>
         </div>
         <div className="right--container">

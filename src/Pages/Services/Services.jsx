@@ -5,7 +5,7 @@ import { gsap } from "gsap/dist/gsap";
 import Lenis from "@studio-freight/lenis";
 gsap.registerPlugin(ScrollTrigger);
 
-function SecondHelper(props) {
+function Services(props) {
   const stadyRef = useRef(null);
   const leftBox = useRef(null);
 
@@ -83,4 +83,4 @@ function SecondHelper(props) {
   );
 }
 
-export default SecondHelper;
+export default Services;

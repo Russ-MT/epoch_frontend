@@ -35,19 +35,33 @@ function FirstPage(props) {
           <div className="upper--container">
             <div className="left--container">
               {" "}
-              <h1 className="first-page--title">
-                EPOCH <span>(Creative Lab)</span>
-              </h1>
+              <div className="title--container">
+                <h1 className="first-page--title">
+                  EP <div className="o--container"></div>CH
+                </h1>
+                {/* <h1></h1> */}
+                {/* <span>(Creative Lab)</span> */}
+              </div>
+            </div>
+            <div className="right--container">
+              <div className="white--div"></div>
+              <div className="black--div"></div>
+              <div className="blue--div"></div>
             </div>
           </div>
           <div className="lower--container">
             <motion.img src="img/example.webp" alt="test" ref={imgRef} />
             <div className="right--container">
-              <p className="first-page--body">
+              <motion.p
+                className="first-page--body"
+                animate={{ opacity: 1 }}
+                initial={{ opacity: 0 }}
+                transition={{ duration: 2 }}
+              >
                 Antinomy offers a wide range of services that apply to many
                 industries. We uncover insights, design concepts and develop
                 solutions - both large and small.
-              </p>
+              </motion.p>
             </div>
           </div>
         </div>
