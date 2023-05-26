@@ -30,15 +30,15 @@ function FirstPage(props) {
 
   return (
     <>
-      <motion.div className="first-page--container" ref={currRef}>
+      <motion.div className="first-page--container tracked-div" ref={currRef}>
         <div className="container">
           <div className="upper--container">
             <div className="left--container">
               {" "}
               <div className="title--container">
-                <h1 className="first-page--title">
-                  EP <div className="o--container"></div>CH
-                </h1>
+                <motion.h1 className="first-page--title">
+                  EP<div className="o--container"></div>CH
+                </motion.h1>
                 {/* <h1></h1> */}
                 {/* <span>(Creative Lab)</span> */}
               </div>

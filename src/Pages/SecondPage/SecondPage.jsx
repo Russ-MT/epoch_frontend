@@ -13,7 +13,7 @@ function SecondPage(props) {
   return (
     <div className="second--container" ref={currRef}>
       <motion.section
-        className="main--container"
+        className="main--container tracked-div"
         initial={{ y: isInView ? "100px" : 0 }}
         animate={{ y: isInView ? 0 : "100px" }}
         transition={{ duration: 1 }}
@@ -39,11 +39,7 @@ function SecondPage(props) {
             {" "}
             <h1>WHY US?</h1>
           </div>
-          <motion.div
-            className="card card--two"
-            onMouseEnter={() => setIsHovered(true)}
-            onMouseLeave={() => setIsHovered(false)}
-          >
+          <motion.div className="card card--two">
             <h1>"WE ARE A TEAM OF YOUNG AND ENTHUSIASTS"</h1>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia,
@@ -57,11 +53,7 @@ function SecondPage(props) {
             </div>
           </motion.div>
 
-          <motion.div
-            className="card card--four"
-            onMouseEnter={() => setIsHovered(true)}
-            onMouseLeave={() => setIsHovered(false)}
-          >
+          <motion.div className="card card--four">
             <h1>"WE'VE GOT TECH GUYS"</h1>
             <p>
               We know how to code. Website, Mobile App, Desktop App - you name
@@ -72,11 +64,7 @@ function SecondPage(props) {
               <h1 className="num">&rarr;</h1>
             </div>
           </motion.div>
-          <motion.div
-            className="card card--five"
-            onMouseEnter={() => setIsHovered(true)}
-            onMouseLeave={() => setIsHovered(false)}
-          >
+          <motion.div className="card card--five">
             <h1>"WE'VE GOT ARTISTS"</h1>
             <p>
               They can draw ofcourse. Character development, 3D , any kind of

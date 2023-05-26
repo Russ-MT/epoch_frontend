@@ -14,9 +14,10 @@ function ThirdPage(props) {
       <div className="third-page" ref={currRef}>
         {isInView && (
           <div className="third-page--container">
+            <img src="img/test.jpeg" alt="test" />
             <motion.div className="article">
               <div className="h1--container" style={{ overflow: "hidden" }}>
-                <motion.h1
+                {/* <motion.h1
                   className="article--heading targetDiv"
                   initial={{
                     y: isInView ? "1000px" : 0,
@@ -42,7 +43,7 @@ function ThirdPage(props) {
                     typeSpeed={40}
                     multiTextLoop
                   />
-                </motion.h1>
+                </motion.h1> */}
               </div>
               <div className="h1--container" style={{ overflow: "hidden" }}>
                 <motion.p
@@ -64,8 +65,8 @@ function ThirdPage(props) {
                   game of web3,everyone can create and play together on one
                   team.
                 </motion.p>
-                <motion.button
-                  className="learn-more--btn"
+                <motion.a
+                  className="learn-more"
                   initial={{
                     y: isInView ? "1000px" : 0,
                     opacity: isInView ? 0 : 1,
@@ -77,7 +78,7 @@ function ThirdPage(props) {
                   transition={{ duration: 1.5 }}
                 >
                   Learn More
-                </motion.button>
+                </motion.a>
               </div>
             </motion.div>
           </div>

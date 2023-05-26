@@ -6,21 +6,17 @@ import { motion } from "framer-motion";
 
 function Navbar(props) {
   const { bgColor } = useSelector((state) => state.bgColor);
-  // const [headerAnimation, setHeaderAnimation] = useState(false);
-  // const location = useLocation();
-
-  // useEffect(() => {
-  //   setHeaderAnimation(false); // Reset animation state on location change
-  // }, [location]);
-
-  // const handleNavClick = () => {
-  //   setHeaderAnimation(true); // Start the header animation
-  // };
-
-  // console.log(headerAnimation);
+  const location = useLocation();
 
   return (
-    <motion.header style={{ backgroundColor: bgColor }}>
+    <motion.header
+      style={{
+        backgroundColor: bgColor,
+      }}
+      initial={{ y: "-500px" }}
+      animate={{ y: 0 }}
+      transition={{ duration: 1 }}
+    >
       <div className="nav--container">
         <div
           className="logo"

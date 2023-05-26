@@ -26,7 +26,7 @@ function Home(props) {
     <>
       <motion.div
         className="home--container"
-        initial={{ y: "1000px" }}
+        initial={{ y: "100px" }}
         animate={{ y: 0 }}
         exit={{ y: 0 }}
         transition={{ duration: 1 }}
