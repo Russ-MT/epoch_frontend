@@ -7,8 +7,9 @@ import { gsap } from "gsap/dist/gsap";
 
 function SecondPage(props) {
   const currRef = useRef(null);
+  const divRef = useRef(null);
   const isInView = useInView(currRef);
-  const [isHovered, setIsHovered] = useState(false);
+  const isDivInView = useInView(divRef);
 
   return (
     <div className="second--container" ref={currRef}>
@@ -33,7 +34,13 @@ function SecondPage(props) {
           <img src="img/exampleTwo.jpeg" alt="test" />
         </div>
       </motion.section>
-      <section className="second--main--container">
+      <motion.section
+        className="second--main--container"
+        initial={{ y: isDivInView ? "100px" : 0 }}
+        animate={{ y: isDivInView ? 0 : "100px" }}
+        transition={{ duration: 1 }}
+        ref={divRef}
+      >
         <div className="card--container">
           <div className="card card--one">
             {" "}
@@ -76,7 +83,7 @@ function SecondPage(props) {
             </div>
           </motion.div>
         </div>
-      </section>
+      </motion.section>
     </div>
   );
 }

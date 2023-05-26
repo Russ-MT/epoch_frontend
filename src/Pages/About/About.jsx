@@ -15,7 +15,7 @@ function About(props) {
 
   useEffect(() => {
     if (isInView) {
-      dispatch(changeBgColor("white"));
+      dispatch(changeBgColor("black"));
     }
   }, [isInView]);
   return (
