@@ -3,7 +3,6 @@ import "./ThirdPage.scss";
 import { useRef } from "react";
 import "intersection-observer";
 import { useInView, motion } from "framer-motion";
-import TypeWriterEffect from "react-typewriter-effect";
 
 function ThirdPage(props) {
   const currRef = useRef(null);
