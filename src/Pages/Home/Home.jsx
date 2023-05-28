@@ -9,11 +9,14 @@ import FifthPage from "../FifthPage/FifthPage";
 import { useInView, motion } from "framer-motion";
 import { useDispatch } from "react-redux";
 import { changeBgColor } from "../../features/BackgroundColor/BackgroundColor";
+import { useLocation } from "react-router-dom";
 
 function Home(props) {
   const currRef = React.useRef(null);
   const isInView = useInView(currRef);
   const dispatch = useDispatch();
+  const location = useLocation();
+  const path = location.pathname;
 
   useEffect(() => {
     window.scrollTo(0, 0);
