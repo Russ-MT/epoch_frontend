@@ -1,82 +1,85 @@
 // Updated New One
 
 .experiment {
-   &_container {
-      height: 600vh; // Change this to controll horizontal scrolling speed
-      position: relative;
-   }
-   &_header {
-      text-align: center;
-      font-size: 4rem;
-      font-family: "Questrial", sans-serif;
-      -webkit-text-stroke: 2px #000000;
-   }
-   &_sticky {
-      position: sticky;
-      top: 50px;
-      width: 100%;
-      height: 100vh;
-      // border: 2px solid black;
-      padding: 0rem 5rem;
-   }
-   &_list {
-      display: flex;
-      gap: 3rem;
-      // border: 2px solid yellow;
-      height: 70%;
-   }
-   &_item {
-      position: relative;
-      display: inline-block;
-   }
-   &_item:hover &_overlay {
-      opacity: 1;
-   }
-   &_img {
-      width: auto;
-      height: 100%;
-      display: block;
-   }
-   &_overlay {
-      background: url(https://media.tenor.com/uHVmd0uBuU0AAAAC/bored-ape-yacht-club-nft.gif)
-         no-repeat center;
-      background-size: cover;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      border-radius: 20px;
-      color: #fff;
-      font-family: "Questrial", sans-serif;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: flex-start;
-      opacity: 0;
-      transition: opacity 0.3s ease;
-      box-sizing: border-box;
-      padding: 2rem 2.5rem 0;
-   }
-   &_overlay--discover {
-      text-decoration: none;
-      font-size: 1.7rem;
-      font-weight: 600;
-      color: white;
-   }
-   &_item--link {
-      height: 10%;
-      width: 100%;
-      background-color: rgba($color: black, $alpha: 0.5);
-      color: white;
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
-      align-self: flex-end;
-   }
+  &_container {
+    height: 600vh; // Change this to controll horizontal scrolling speed
+    position: relative;
+  }
+  &_header {
+    //  text-align: center;
+    font-size: 4rem;
+    font-family: "Archivo", sans-serif;
+    //  -webkit-text-stroke: 2px #6a6a6a;
+    font-weight: 300;
+    margin: 10px 0;
+    //  color: transparent;
+    width: 90%;
+    //  border-bottom: 2px solid black;
+  }
+  &_sticky {
+    position: sticky;
+    top: 50px;
+    width: 100%;
+    height: 110vh;
+    // border: 2px solid black;
+    padding: 0rem 5rem;
+  }
+  &_list {
+    display: flex;
+    gap: 3rem;
+    // border: 2px solid yellow;
+    height: 70%;
+  }
+  &_item {
+    position: relative;
+    display: inline-block;
+  }
+  &_item:hover &_overlay {
+    opacity: 1;
+  }
+  &_img {
+    width: auto;
+    height: 100%;
+    display: block;
+  }
+  &_overlay {
+    background: url(https://media.tenor.com/uHVmd0uBuU0AAAAC/bored-ape-yacht-club-nft.gif)
+      no-repeat center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    color: #fff;
+    font-family: "Questrial", sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    box-sizing: border-box;
+    padding: 2rem 2.5rem 0;
+  }
+  &_overlay--discover {
+    text-decoration: none;
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: white;
+  }
+  &_item--link {
+    height: 10%;
+    width: 100%;
+    background-color: rgba($color: black, $alpha: 0.5);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    align-self: flex-end;
+  }
 }
-
-
 
 // .fourth-page {
 //   height: 100vh;

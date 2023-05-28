@@ -1,42 +1,11 @@
-import React, { useEffect, useState } from "react";
-import "./SecondPage.scss";
-import { useInView, motion } from "framer-motion";
-import { useRef } from "react";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-import { gsap } from "gsap/dist/gsap";
+import React from "react";
+import "./SecondPageHelper.scss";
+import { motion } from "framer-motion";
 
-function SecondPage(props) {
-  const currRef = useRef(null);
-  const divRef = useRef(null);
-  const isInView = useInView(currRef);
-  const isDivInView = useInView(divRef);
-
+function SecondPageHelper(props) {
   return (
-    <div className="second--container" ref={currRef}>
+    <div className="secondhelper--container">
       <motion.section
-        className="main--container tracked-div"
-        initial={{ y: isInView ? "100px" : 0 }}
-        animate={{ y: isInView ? 0 : "100px" }}
-        transition={{ duration: 1 }}
-      >
-        <div className="left--container">
-          <h1 className="soft--header">DESIGN,</h1>
-          <h1 className="soft--header">STORIES,</h1>
-          <h1 className="soft--header">
-            {" "}
-            <span style={{ color: "rgb(0, 0, 184)" }}> INNOVATIVE</span> &
-            TECHNOLOGY,
-          </h1>
-          <h1 className="main--header">
-            A PLACE FOR EXCITEMENTS&{" "}
-            <span style={{ color: "rgb(0, 0, 184)" }}>EXPERIMENTS</span>{" "}
-          </h1>
-        </div>
-        <div className="right--container">
-          <img src="img/exampleTwo.jpeg" alt="test" />
-        </div>
-      </motion.section>
-      {/* <motion.section
         className="second--main--container"
         // initial={{ y: isDivInView ? "100px" : 0 }}
         // animate={{ y: isDivInView ? 0 : "100px" }}
@@ -97,9 +66,9 @@ function SecondPage(props) {
             </div>
           </motion.div>
         </div>
-      </motion.section> */}
+      </motion.section>
     </div>
   );
 }
 
-export default SecondPage;
+export default SecondPageHelper;
