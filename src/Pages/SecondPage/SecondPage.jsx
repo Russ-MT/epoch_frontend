@@ -25,9 +25,7 @@ function SecondPage(props) {
           <h1 className="soft--header">INNOVATIVE & TECHNOLOGY,</h1>
           <h1 className="main--header">
             A PLACE FOR <span>EXCITEMENTS</span> &{" "}
-            <span style={{ backgroundColor: "rgb(0, 0, 184)", color: "white" }}>
-              EXPERIMENTS
-            </span>{" "}
+            <span style={{ color: "rgb(0, 0, 184)" }}>EXPERIMENTS</span>{" "}
           </h1>
         </div>
         <div className="right--container">
@@ -41,6 +39,18 @@ function SecondPage(props) {
         transition={{ duration: 1 }}
         ref={divRef}
       >
+        <div className="image--container">
+          <div className="image--container--mini">
+            <img src="img/testThree.jpeg" alt="test" />
+          </div>
+          <div className="image--container--mini">
+            <img
+              src="img/testTwo.jpeg"
+              alt="test"
+              style={{ marginLeft: "5px" }}
+            />
+          </div>
+        </div>
         <div className="card--container">
           <div className="card card--one">
             {" "}
