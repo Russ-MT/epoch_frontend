@@ -1,16 +1,19 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./SecondPageHelper.scss";
-import { motion } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 
 function SecondPageHelper(props) {
+  const divRef = useRef(null);
+  const isInView = useInView(divRef);
+
   return (
-    <div className="secondhelper--container">
+    <div className="secondhelper--container" ref={divRef}>
       <motion.section
         className="second--main--container"
-        // initial={{ y: isDivInView ? "100px" : 0 }}
-        // animate={{ y: isDivInView ? 0 : "100px" }}
-        // transition={{ duration: 1 }}
-        // ref={divRef}
+        initial={{ y: isInView ? "100px" : 0 }}
+        animate={{ y: isInView ? 0 : "100px" }}
+        transition={{ duration: 1 }}
+        //
       >
         <div className="image--container">
           <div className="image--container--mini">
