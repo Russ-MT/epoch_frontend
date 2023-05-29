@@ -6,6 +6,7 @@ import { changeBgColor } from "../../features/BackgroundColor/BackgroundColor";
 import "./AboutFirstPage.scss";
 import RightArrow from "../../assets/arrowright.svg";
 import { triggerDetails } from "../../features/BackgroundColor/BackgroundColor";
+import { useLocation } from "react-router-dom";
 
 function AboutFirstPage(props) {
   const currRef = React.useRef(null);
@@ -14,7 +15,11 @@ function AboutFirstPage(props) {
   const [isHovered, setIsHovered] = React.useState(false);
   const [id, setId] = React.useState("");
   const [isClicked, setIsClicked] = React.useState(false);
+  const location = useLocation();
 
+  if (location.pathname != "/about") {
+    dispatch(triggerDetails({ click: false, id: null }));
+  }
   const clickTrigger = (e) => {
     const id = e.target.id;
     // setIsClicked((state) => !state);

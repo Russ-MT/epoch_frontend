@@ -152,9 +152,13 @@
           // padding-left: 10%;
 
           // margin-top: 40px;
-          color: rgba(0, 0, 0, 0.747);
+          // color: rgba(0, 0, 0, 0.747);
           // color: transparent;
           // -webkit-text-stroke: 2px black;
+          background-image: url("https://images.unsplash.com/photo-1567359781514-3b964e2b04d6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8YWJzdHJhY3R8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60");
+          background-clip: text;
+          -webkit-background-clip: text;
+          color: transparent;
         }
       }
 

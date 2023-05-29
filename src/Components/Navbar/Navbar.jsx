@@ -1,12 +1,17 @@
 import React, { useState, useEffect } from "react";
 import "./Navbar.scss";
 import { NavLink, useLocation } from "react-router-dom";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import { motion } from "framer-motion";
+import { triggerDetails } from "../../features/BackgroundColor/BackgroundColor";
 
 function Navbar(props) {
   const { bgColor } = useSelector((state) => state.bgColor);
-  const location = useLocation();
+  const dispatch = useDispatch();
+
+  const triggerDetail = () => {
+    dispatch(triggerDetails({ click: false, id: null }));
+  };
 
   return (
     <motion.header
@@ -33,6 +38,7 @@ function Navbar(props) {
               color: bgColor === "black" ? "white" : "black",
             })}
             className="nav--link"
+            onClick={triggerDetail}
           >
             Home
           </NavLink>
@@ -44,6 +50,7 @@ function Navbar(props) {
               color: bgColor === "black" ? "white" : "black",
             })}
             className="nav--link"
+            onClick={triggerDetail}
           >
             About
           </NavLink>
@@ -55,6 +62,7 @@ function Navbar(props) {
               color: bgColor === "black" ? "white" : "black",
             })}
             className="nav--link"
+            onClick={triggerDetail}
           >
             Services
           </NavLink>
@@ -66,6 +74,7 @@ function Navbar(props) {
               color: bgColor === "black" ? "white" : "black",
             })}
             className="nav--link"
+            onClick={triggerDetail}
           >
             Socials
           </NavLink>
@@ -77,6 +86,7 @@ function Navbar(props) {
               color: bgColor === "black" ? "white" : "black",
             })}
             className="nav--link"
+            onClick={triggerDetail}
           >
             Careers
           </NavLink>

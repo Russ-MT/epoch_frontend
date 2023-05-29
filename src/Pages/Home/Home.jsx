@@ -5,11 +5,11 @@ import "intersection-observer";
 import FirstPage from "../FirstPage/FirstPage";
 import ThirdPage from "../ThirdPage/ThirdPage";
 import FourthPage from "../FourthPage/FourthPage";
-import FifthPage from "../FifthPage/FifthPage";
 import { useInView, motion } from "framer-motion";
 import { useDispatch } from "react-redux";
 import { changeBgColor } from "../../features/BackgroundColor/BackgroundColor";
 import { useLocation } from "react-router-dom";
+import FifthPage from "../FifthPage/FifthPage";
 
 function Home(props) {
   const currRef = React.useRef(null);

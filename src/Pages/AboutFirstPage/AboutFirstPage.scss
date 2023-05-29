@@ -13,14 +13,24 @@
 
     img {
       width: 10rem;
+      background-image: url("https://images.unsplash.com/photo-1567359781514-3b964e2b04d6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8YWJzdHJhY3R8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60");
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
     }
     .main--links {
       margin: 10px 20px;
-      font-family: "Questrial", sans-serif;
+      font-family: "Archivo", sans-serif;
+
       text-decoration: none;
       font-size: 8rem;
+      // color: transparent;
+      // -webkit-text-stroke: 2px #000000;
+      font-weight: 600;
+      background-image: url("https://images.unsplash.com/photo-1567359781514-3b964e2b04d6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8YWJzdHJhY3R8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60");
+      background-clip: text;
+      -webkit-background-clip: text;
       color: transparent;
-      -webkit-text-stroke: 2px #ffffff;
     }
 
     .main--links:hover {

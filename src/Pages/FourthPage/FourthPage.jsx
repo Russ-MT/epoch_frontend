@@ -37,14 +37,7 @@ function FourthPage() {
     <>
       <div ref={scrollRef} className="experiment_container">
         <div className="experiment_sticky">
-          <h1 className="experiment_header">
-            <span style={{ color: "rgba(0, 0, 0, 0.899)", fontWeight: 200 }}>
-              OUR
-            </span>{" "}
-            <span style={{ color: "rgb(0, 0, 184)", fontWeight: 200 }}>
-              EXPERIMENTS
-            </span>{" "}
-          </h1>
+          <h1 className="experiment_header">OUR EXPERIMENTS &rarr;</h1>
 
           <div ref={listRef} className="experiment_list">
             <div
