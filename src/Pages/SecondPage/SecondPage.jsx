@@ -45,11 +45,14 @@ function SecondPage(props) {
       >
         <div className="image--container">
           <div className="image--container--mini">
-            <img src="img/testThree.jpeg" alt="test" />
+            <img
+              src="https://images.unsplash.com/photo-1661956603025-8310b2e3036d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHx8&auto=format&fit=crop&w=900&q=60"
+              alt="test"
+            />
           </div>
           <div className="image--container--mini">
             <img
-              src="img/testTwo.jpeg"
+              src="https://images.unsplash.com/photo-1684577753340-de97c66fa6fd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMDJ8fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=800&q=60"
               alt="test"
               style={{ marginLeft: "5px" }}
             />

@@ -7,20 +7,26 @@
   }
   &_header {
     //  text-align: center;
-    font-size: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 4.5rem;
     font-family: "Archivo", sans-serif;
-    //  -webkit-text-stroke: 2px #6a6a6a;
-    font-weight: 300;
+    //  -webkit-text-stroke: 2px #ffffff;
+    font-weight: 600;
     margin: 10px 0;
     //  color: transparent;
-    width: 90%;
+    width: 40%;
+    text-overflow: ellipsis;
     //  border-bottom: 2px solid black;
+    font-size-adjust: 0.5;
+    //  background-color: #0040ff;
+    //  border-bottom: 2px solid rgba(0, 0, 0, 0.074);s
   }
   &_sticky {
     position: sticky;
     top: 50px;
     width: 100%;
-    height: 110vh;
+    height: 100vh;
     // border: 2px solid black;
     padding: 0rem 5rem;
   }

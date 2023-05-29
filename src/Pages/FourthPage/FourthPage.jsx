@@ -6,129 +6,136 @@ import { useMotionValueEvent, useScroll } from "framer-motion";
 import { motion } from "framer-motion";
 
 function FourthPage() {
-   const scrollRef = useRef(null);
+  const scrollRef = useRef(null);
 
-   const listRef = useRef(null);
+  const listRef = useRef(null);
 
-   const { scrollYProgress } = useScroll({ target: scrollRef });
+  const { scrollYProgress } = useScroll({ target: scrollRef });
 
-   useMotionValueEvent(scrollYProgress, "change", (latest) => {
-      listRef.current.style.transform = `translateX(${latest * -50}%)`;
-   });
+  useMotionValueEvent(scrollYProgress, "change", (latest) => {
+    listRef.current.style.transform = `translateX(${latest * -50}%)`;
+  });
 
-   //  Hover text
-   const [isHovered, setIsHovered] = useState(false);
+  //  Hover text
+  const [isHovered, setIsHovered] = useState(false);
 
-   const handleHover = () => {
-      setIsHovered(true);
-   };
+  const handleHover = () => {
+    setIsHovered(true);
+  };
 
-   const handleMouseLeave = () => {
-      setIsHovered(false);
-   };
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
 
-   const noneHoverImg =
-      "https://news.artnet.com/app/news-upload/2021/09/Yuga-Labs-Bored-Ape-Yacht-Club-4466.jpg";
-   const hoverImg = "";
+  const noneHoverImg =
+    "https://news.artnet.com/app/news-upload/2021/09/Yuga-Labs-Bored-Ape-Yacht-Club-4466.jpg";
+  const hoverImg = "";
 
-   const [image, setImage] = useState(noneHoverImg);
+  const [image, setImage] = useState(noneHoverImg);
 
-   return (
-      <>
-         <div ref={scrollRef} className="experiment_container">
-            <div className="experiment_sticky">
-               <h1 className="experiment_header">OUR EXPERIMENTS 🧪</h1>
+  return (
+    <>
+      <div ref={scrollRef} className="experiment_container">
+        <div className="experiment_sticky">
+          <h1 className="experiment_header">
+            <span style={{ color: "rgba(0, 0, 0, 0.899)", fontWeight: 200 }}>
+              OUR
+            </span>{" "}
+            <span style={{ color: "rgb(0, 0, 184)", fontWeight: 200 }}>
+              EXPERIMENTS
+            </span>{" "}
+          </h1>
 
-               <div ref={listRef} className="experiment_list">
-                  <div
-                     className="experiment_item"
-                     onMouseEnter={handleHover}
-                     onMouseLeave={handleMouseLeave}
-                  >
-                     <img
-                        className="experiment_img"
-                        src="https://news.artnet.com/app/news-upload/2021/09/Yuga-Labs-Bored-Ape-Yacht-Club-4466.jpg"
-                        alt="photo"
-                     />
-                     <motion.div
-                        className="experiment_overlay"
-                        initial={{ y: "-30px" }}
-                        animate={{ y: "0" }}
-                        transition={{ duration: 0.5 }}
-                     >
-                        <a href="#" className="experiment_overlay--discover">
-                           001
-                        </a>
-                        <a href="#" className="experiment_overlay--discover">
-                           NAME
-                        </a>
-                        <div className="experiment_item--link">
-                           <p>The description</p>
-                        </div>
-                     </motion.div>
-                  </div>
-
-                  <div
-                     className="experiment_item"
-                     onMouseEnter={handleHover}
-                     onMouseLeave={handleMouseLeave}
-                  >
-                     <img
-                        className="experiment_img"
-                        src="https://news.artnet.com/app/news-upload/2021/09/Yuga-Labs-Bored-Ape-Yacht-Club-4466.jpg"
-                        alt="photo"
-                     />
-                     <motion.div
-                        className="experiment_overlay"
-                        initial={{ y: "-30px" }}
-                        animate={{ y: "0" }}
-                        transition={{ duration: 0.5 }}
-                     >
-                        <a href="#" className="experiment_overlay--discover">
-                           001
-                        </a>
-                        <a href="#" className="experiment_overlay--discover">
-                           NAME
-                        </a>
-                        <div className="experiment_item--link">
-                           <p>The description</p>
-                        </div>
-                     </motion.div>
-                  </div>
-
-                  <div
-                     className="experiment_item"
-                     onMouseEnter={handleHover}
-                     onMouseLeave={handleMouseLeave}
-                  >
-                     <img
-                        className="experiment_img"
-                        src="https://news.artnet.com/app/news-upload/2021/09/Yuga-Labs-Bored-Ape-Yacht-Club-4466.jpg"
-                        alt="photo"
-                     />
-
-                     <motion.div
-                        className="experiment_overlay"
-                        initial={{ y: "-30px" }}
-                        animate={{ y: "0" }}
-                        transition={{ duration: 0.5 }}
-                     >
-                        <a href="#" className="experiment_overlay--discover">
-                           001
-                        </a>
-                        <a href="#" className="experiment_overlay--discover">
-                           NAME
-                        </a>
-                        <div className="experiment_item--link">
-                           <p>The description</p>
-                        </div>
-                     </motion.div>
-                  </div>
-               </div>
+          <div ref={listRef} className="experiment_list">
+            <div
+              className="experiment_item"
+              onMouseEnter={handleHover}
+              onMouseLeave={handleMouseLeave}
+            >
+              <img
+                className="experiment_img"
+                src="https://news.artnet.com/app/news-upload/2021/09/Yuga-Labs-Bored-Ape-Yacht-Club-4466.jpg"
+                alt="photo"
+              />
+              <motion.div
+                className="experiment_overlay"
+                initial={{ y: "-30px" }}
+                animate={{ y: "0" }}
+                transition={{ duration: 0.5 }}
+              >
+                <a href="#" className="experiment_overlay--discover">
+                  001
+                </a>
+                <a href="#" className="experiment_overlay--discover">
+                  NAME
+                </a>
+                <div className="experiment_item--link">
+                  <p>The description</p>
+                </div>
+              </motion.div>
             </div>
-         </div>
-      </>
-   );
+
+            <div
+              className="experiment_item"
+              onMouseEnter={handleHover}
+              onMouseLeave={handleMouseLeave}
+            >
+              <img
+                className="experiment_img"
+                src="https://news.artnet.com/app/news-upload/2021/09/Yuga-Labs-Bored-Ape-Yacht-Club-4466.jpg"
+                alt="photo"
+              />
+              <motion.div
+                className="experiment_overlay"
+                initial={{ y: "-30px" }}
+                animate={{ y: "0" }}
+                transition={{ duration: 0.5 }}
+              >
+                <a href="#" className="experiment_overlay--discover">
+                  001
+                </a>
+                <a href="#" className="experiment_overlay--discover">
+                  NAME
+                </a>
+                <div className="experiment_item--link">
+                  <p>The description</p>
+                </div>
+              </motion.div>
+            </div>
+
+            <div
+              className="experiment_item"
+              onMouseEnter={handleHover}
+              onMouseLeave={handleMouseLeave}
+            >
+              <img
+                className="experiment_img"
+                src="https://news.artnet.com/app/news-upload/2021/09/Yuga-Labs-Bored-Ape-Yacht-Club-4466.jpg"
+                alt="photo"
+              />
+
+              <motion.div
+                className="experiment_overlay"
+                initial={{ y: "-30px" }}
+                animate={{ y: "0" }}
+                transition={{ duration: 0.5 }}
+              >
+                <a href="#" className="experiment_overlay--discover">
+                  001
+                </a>
+                <a href="#" className="experiment_overlay--discover">
+                  NAME
+                </a>
+                <div className="experiment_item--link">
+                  <p>The description</p>
+                </div>
+              </motion.div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+  );
 }
 
 export default FourthPage;

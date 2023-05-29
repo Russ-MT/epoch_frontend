@@ -6,6 +6,7 @@ import "./FifthPage.scss";
 
 function FifthPage(props) {
   const currRef = useRef(null);
+  const isInView = useInView(currRef);
 
   const handleContactClick = () => {
     window.location.href = "mailto:myo111thant@gmail.com";
@@ -14,7 +15,12 @@ function FifthPage(props) {
   return (
     <>
       <div className="fourth-page" ref={currRef}>
-        <motion.div className="fourth-page--container">
+        <motion.div
+          className="fourth-page--container"
+          animate={{ opacity: isInView ? 1 : 0 }}
+          initial={{ opacity: isInView ? 0 : 1 }}
+          transition={{ duration: 1 }}
+        >
           <div className="text--container">
             <NavLink onClick={handleContactClick}>
               <h1 className="contact">Contact Us</h1>
