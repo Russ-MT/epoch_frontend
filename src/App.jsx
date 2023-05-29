@@ -7,31 +7,33 @@ import Footer from "./Components/Footer/Footer";
 import About from "./Pages/About/About";
 import Lenis from "@studio-freight/lenis";
 import Services from "./Pages/Services/Services";
+import Careers from "./Pages/Careers/Careers";
 
 const lenis = new Lenis({
-  duration: 1.3,
-  easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+   duration: 1.3,
+   easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
 });
 
 function raf(time) {
-  lenis.raf(time);
-  requestAnimationFrame(raf);
+   lenis.raf(time);
+   requestAnimationFrame(raf);
 }
 
 requestAnimationFrame(raf);
 
 function App(props) {
-  return (
-    <BrowserRouter>
-      <Navbar />
-      <Routes>
-        <Route index element={<Home />}></Route>
-        <Route path="about" element={<About />}></Route>
-        <Route path="services" element={<Services />}></Route>
-      </Routes>
-      <Footer />
-    </BrowserRouter>
-  );
+   return (
+      <BrowserRouter>
+         <Navbar />
+         <Routes>
+            <Route index element={<Home />}></Route>
+            <Route path="about" element={<About />}></Route>
+            <Route path="services" element={<Services />}></Route>
+            <Route path="career" element={<Careers />}></Route>
+         </Routes>
+         <Footer />
+      </BrowserRouter>
+   );
 }
 
 export default App;
