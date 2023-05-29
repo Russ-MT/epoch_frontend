@@ -36,7 +36,7 @@ function SecondPage(props) {
           <img src="img/exampleTwo.jpeg" alt="test" />
         </div>
       </motion.section>
-      {/* <motion.section
+      <motion.section
         className="second--main--container"
         // initial={{ y: isDivInView ? "100px" : 0 }}
         // animate={{ y: isDivInView ? 0 : "100px" }}
@@ -97,7 +97,7 @@ function SecondPage(props) {
             </div>
           </motion.div>
         </div>
-      </motion.section> */}
+      </motion.section>
     </div>
   );
 }

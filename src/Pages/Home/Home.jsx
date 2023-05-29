@@ -6,7 +6,6 @@ import FirstPage from "../FirstPage/FirstPage";
 import ThirdPage from "../ThirdPage/ThirdPage";
 import FourthPage from "../FourthPage/FourthPage";
 import FifthPage from "../FifthPage/FifthPage";
-import SecondPageHelper from "../SecondPageHelper/SecondPageHelper";
 import { useInView, motion } from "framer-motion";
 import { useDispatch } from "react-redux";
 import { changeBgColor } from "../../features/BackgroundColor/BackgroundColor";
@@ -38,7 +37,6 @@ function Home(props) {
       >
         <FirstPage />
         <SecondPage />
-        <SecondPageHelper />
         <ThirdPage />
         <FourthPage />
         <FifthPage />
