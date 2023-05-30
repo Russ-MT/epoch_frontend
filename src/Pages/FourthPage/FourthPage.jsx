@@ -26,12 +26,6 @@ function FourthPage() {
       setIsHovered(false);
    };
 
-   const noneHoverImg =
-      "https://news.artnet.com/app/news-upload/2021/09/Yuga-Labs-Bored-Ape-Yacht-Club-4466.jpg";
-   const hoverImg = "";
-
-   const [image, setImage] = useState(noneHoverImg);
-
    return (
       <>
          <div ref={currRef} className="experiment_container">

@@ -10,7 +10,7 @@ import Services from "./Pages/Services/Services";
 import Careers from "./Pages/Careers/Careers";
 
 const lenis = new Lenis({
-   duration: 1.3,
+   duration: 2, // Change the scroll speed
    easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
 });
 
