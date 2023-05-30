@@ -10,31 +10,30 @@ import Services from "./Pages/Services/Services";
 import Careers from "./Pages/Careers/Careers";
 
 const lenis = new Lenis({
-   duration: 2, // Change the scroll speed
-   easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+  duration: 2, // Change the scroll speed
+  easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
 });
 
 function raf(time) {
-   lenis.raf(time);
-   requestAnimationFrame(raf);
+  lenis.raf(time);
+  requestAnimationFrame(raf);
 }
 
 requestAnimationFrame(raf);
 
 function App(props) {
-
-   return (
-      <BrowserRouter>
-         <Navbar />
-         <Routes>
-            <Route index element={<Home />}></Route>
-            <Route path="about" element={<About />}></Route>
-            <Route path="services" element={<Services />}></Route>
-            <Route path="career" element={<Careers />}></Route>
-         </Routes>
-         <Footer />
-      </BrowserRouter>
-   );
-
+  return (
+    <BrowserRouter>
+      <Navbar />
+      <Routes>
+        <Route index element={<Home />}></Route>
+        <Route path="about" element={<About />}></Route>
+        <Route path="services" element={<Services />}></Route>
+        <Route path="career" element={<Careers />}></Route>
+      </Routes>
+      <Footer />
+    </BrowserRouter>
+  );
+}
 
 export default App;
