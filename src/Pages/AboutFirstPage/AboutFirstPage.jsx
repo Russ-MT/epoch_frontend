@@ -20,9 +20,10 @@ function AboutFirstPage(props) {
   if (location.pathname != "/about") {
     dispatch(triggerDetails({ click: false, id: null }));
   }
+
   const clickTrigger = (e) => {
-    const id = e.target.id;
-    // setIsClicked((state) => !state);
+    let id = e.target.id;
+
     dispatch(triggerDetails({ click: true, id: id }));
   };
 

@@ -26,10 +26,8 @@ function FifthPage(props) {
               <h1 className="contact">Contact Us</h1>
             </NavLink>
             <h1>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi,
-              suscipit dolorum qui illo, animi odit repellat soluta numquam
-              officiis repudiandae obcaecati voluptates vel, minus aspernatur id
-              voluptas hic labore perferendis?
+              Ready to work with us ? Reach out to discuss how we can help you
+              build a strong digital brand presence.
             </h1>
           </div>
         </motion.div>

@@ -1,9 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "./Navbar.scss";
-import { NavLink, useLocation } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { motion } from "framer-motion";
 import { triggerDetails } from "../../features/BackgroundColor/BackgroundColor";
+import { animateScroll as scroll } from "react-scroll";
 
 function Navbar(props) {
   const { bgColor } = useSelector((state) => state.bgColor);
@@ -11,6 +12,12 @@ function Navbar(props) {
 
   const triggerDetail = () => {
     dispatch(triggerDetails({ click: false, id: null }));
+  };
+
+  const handleClick = () => {
+    triggerDetail();
+    // scroll.scrollToTop();
+    window.scrollTo(0, 0);
   };
 
   return (
@@ -38,7 +45,7 @@ function Navbar(props) {
               color: bgColor === "black" ? "white" : "black",
             })}
             className="nav--link"
-            onClick={triggerDetail}
+            onClick={handleClick}
           >
             Home
           </NavLink>
@@ -50,7 +57,7 @@ function Navbar(props) {
               color: bgColor === "black" ? "white" : "black",
             })}
             className="nav--link"
-            onClick={triggerDetail}
+            onClick={handleClick}
           >
             About
           </NavLink>
@@ -62,7 +69,7 @@ function Navbar(props) {
               color: bgColor === "black" ? "white" : "black",
             })}
             className="nav--link"
-            onClick={triggerDetail}
+            onClick={handleClick}
           >
             Services
           </NavLink>
@@ -74,7 +81,7 @@ function Navbar(props) {
               color: bgColor === "black" ? "white" : "black",
             })}
             className="nav--link"
-            onClick={triggerDetail}
+            onClick={handleClick}
           >
             Socials
           </NavLink>
@@ -86,7 +93,7 @@ function Navbar(props) {
               color: bgColor === "black" ? "white" : "black",
             })}
             className="nav--link"
-            onClick={triggerDetail}
+            onClick={handleClick}
           >
             Careers
           </NavLink>

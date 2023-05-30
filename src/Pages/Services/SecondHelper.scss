@@ -1,6 +1,44 @@
 .helper--container {
   // border: 1px solid black;
-  margin: 20vh 0;
+  margin-bottom: 20vh;
+
+  .img--container {
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+
+    img {
+      width: 100%;
+      // height: 100%;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+
+    .text--description {
+      position: absolute;
+      color: #fff;
+      bottom: 50%;
+      // width: 50%;
+      right: 0;
+      padding: 10px;
+
+      p {
+        font-family: "Questrial", sans-serif;
+        // line-height: 25px;
+        font-weight: 200;
+        color: rgb(248, 248, 248);
+        background-image: url("https://i.pinimg.com/564x/64/d7/a6/64d7a6369f209ede22aa9681ed2b0301.jpg");
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        font-size: 1rem;
+      }
+    }
+  }
 
   .text--container {
     // border: 1px solid black;
@@ -12,38 +50,39 @@
 
   // height: 100px;
   .left--container {
-    width: 50%;
+    width: 40%;
     height: 100%;
     // border: 1px solid black;
     .text--left--container {
-      // border: 1px solid black;
-
-      border-left: 5px solid rgb(0, 0, 184);
+      // border-left: 5px solid rgb(0, 0, 184);
 
       font-family: "Archivo", sans-serif;
-      font-size: 1rem;
       position: relative;
       padding-left: 10px;
       height: 100px;
-      margin: 30px 10px;
-      color: rgb(44, 44, 44);
+      margin: 0px 10px;
+      color: rgb(20, 20, 20);
 
       h1 {
-        position: absolute;
-        top: 10%;
-        font-weight: 500;
+        font-size: 4rem;
+        font-weight: 600;
+        // padding-top: 20px;
+        background-image: url("../../../public/img/textFillOne.jpeg");
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
       }
     }
   }
 
   .right--container {
-    width: 50%;
+    width: 60%;
     // border: 1px solid black;
     // border-left: 1px solid rgb(0, 0, 0);
 
     .text--inner--container {
       //   border-left: 3px solid black;
-      border-bottom: 2px solid black;
+      border-top: 2px solid black;
       width: 70%;
       padding-left: 20px;
       font-family: "Archivo", sans-serif;
@@ -52,13 +91,12 @@
       margin-bottom: 120px;
 
       h1 {
-        color: rgb(0, 0, 184);
         font-weight: 500;
       }
 
       p {
-        font-weight: 100;
-        font-size: 1rem;
+        font-weight: 300;
+        font-size: 1.1rem;
         font-family: "Questrial", sans-serif;
       }
     }
