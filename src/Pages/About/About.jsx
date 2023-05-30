@@ -11,19 +11,13 @@ import Goals from "../../Components/Goals/Goals";
 function About(props) {
   const currRef = React.useRef(null);
   const isInView = useInView(currRef);
-  const dispatch = useDispatch();
 
-  useEffect(() => {
-    if (isInView) {
-      dispatch(changeBgColor("white"));
-    }
-  }, [isInView]);
   return (
     <>
       <motion.div
         className="about"
         ref={currRef}
-        initial={{ y: "-1000px" }}
+        initial={{ y: "1000px" }}
         animate={{ y: 0 }}
         exit={{ y: 0 }}
         transition={{ duration: 1 }}

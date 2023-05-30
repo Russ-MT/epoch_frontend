@@ -22,6 +22,7 @@ function raf(time) {
 requestAnimationFrame(raf);
 
 function App(props) {
+
    return (
       <BrowserRouter>
          <Navbar />
@@ -34,6 +35,6 @@ function App(props) {
          <Footer />
       </BrowserRouter>
    );
-}
+
 
 export default App;
