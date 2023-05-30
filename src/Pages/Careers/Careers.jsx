@@ -1,3 +1,4 @@
+
 import React from "react";
 import "./Careers.scss";
 
@@ -38,6 +39,7 @@ function Careers(props) {
       </div>
     </div>
   );
+
 }
 
 export default Careers;
