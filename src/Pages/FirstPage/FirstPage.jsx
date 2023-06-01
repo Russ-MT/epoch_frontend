@@ -17,7 +17,7 @@ function FirstPage(props) {
     timeln.fromTo(
       imgRef.current,
       { y: 0 },
-      { y: "-100px", duration: 1, ease: "none" }
+      { y: "-150px", duration: 1, ease: "none" }
     );
 
     ScrollTrigger.create({

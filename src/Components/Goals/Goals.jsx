@@ -6,8 +6,6 @@ function TaleOfUs(props) {
   const id = useSelector((state) => state.bgColor.id);
   const isClick = useSelector((state) => state.bgColor.isClicked);
 
-  console.log(id, isClick);
-
   return (
     <>
       {id === "goals" && isClick && (

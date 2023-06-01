@@ -2,8 +2,7 @@ import React, { useEffect, useRef } from "react";
 import "./SecondHelper.scss";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { gsap } from "gsap/dist/gsap";
-import Lenis from "@studio-freight/lenis";
-import { useInView, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import FifthPage from "../FifthPage/FifthPage";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -41,10 +40,10 @@ function Services(props) {
       <motion.div
         className="helper--container"
         ref={currRef}
-        initial={{ y: "1000px" }}
-        animate={{ y: 0 }}
-        exit={{ y: 0 }}
-        transition={{ duration: 1 }}
+        // initial={{ y: "1000px" }}
+        // animate={{ y: 0 }}
+        // exit={{ y: 0 }}
+        // transition={{ duration: 1 }}
       >
         <div className="img--container">
           <img

@@ -2,14 +2,10 @@ import React, { useEffect, useState } from "react";
 import "./SecondPage.scss";
 import { useInView, motion } from "framer-motion";
 import { useRef } from "react";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-import { gsap } from "gsap/dist/gsap";
 
 function SecondPage(props) {
   const currRef = useRef(null);
-  const divRef = useRef(null);
   const isInView = useInView(currRef);
-  const isDivInView = useInView(divRef);
 
   return (
     <div className="second--container" ref={currRef}>

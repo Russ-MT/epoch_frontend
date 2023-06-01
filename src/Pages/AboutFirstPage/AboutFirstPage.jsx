@@ -1,20 +1,16 @@
 import React from "react";
-import { useEffect } from "react";
-import { useSelector, useDispatch } from "react-redux";
+import { useDispatch } from "react-redux";
 import { useInView, motion } from "framer-motion";
-import { changeBgColor } from "../../features/BackgroundColor/BackgroundColor";
 import "./AboutFirstPage.scss";
 import RightArrow from "../../assets/arrowright.svg";
 import { triggerDetails } from "../../features/BackgroundColor/BackgroundColor";
 import { useLocation } from "react-router-dom";
 
 function AboutFirstPage(props) {
-  const currRef = React.useRef(null);
-  const isInView = useInView(currRef);
+  // const currRef = React.useRef(null);
   const dispatch = useDispatch();
   const [isHovered, setIsHovered] = React.useState(false);
   const [id, setId] = React.useState("");
-  const [isClicked, setIsClicked] = React.useState(false);
   const location = useLocation();
 
   if (location.pathname != "/about") {
@@ -31,7 +27,7 @@ function AboutFirstPage(props) {
     <>
       <motion.div
         className="about--container"
-        ref={currRef}
+        // ref={currRef}
         // initial={{ y: "-1000px" }}
         // animate={{ y: 0 }}
         // exit={{ y: 0 }}

@@ -16,7 +16,6 @@ function Home(props) {
   const isInView = useInView(currRef);
   const dispatch = useDispatch();
   const location = useLocation();
-  const path = location.pathname;
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -25,14 +24,15 @@ function Home(props) {
       dispatch(changeBgColor("white"));
     }
   }, [isInView]);
+
   return (
-    <>
+    <React.Fragment>
       <motion.div
         className="home--container"
-        initial={{ y: "100px" }}
-        animate={{ y: 0 }}
-        exit={{ y: 0 }}
-        transition={{ duration: 1 }}
+        // initial={{ y: "100px" }}
+        // animate={{ y: 0 }}
+        // exit={{ y: 0 }}
+        // transition={{ duration: 1 }}
         ref={currRef}
       >
         <FirstPage />
@@ -41,7 +41,7 @@ function Home(props) {
         <FourthPage />
         <FifthPage />
       </motion.div>
-    </>
+    </React.Fragment>
   );
 }
 

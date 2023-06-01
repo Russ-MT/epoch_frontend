@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Navbar.scss";
 import { NavLink } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { motion } from "framer-motion";
-import { triggerDetails } from "../../features/BackgroundColor/BackgroundColor";
+import {
+  triggerDetails,
+  triggerAnimation,
+} from "../../features/BackgroundColor/BackgroundColor";
 import { animateScroll as scroll } from "react-scroll";
 
 function Navbar(props) {
@@ -16,8 +19,7 @@ function Navbar(props) {
 
   const handleClick = () => {
     triggerDetail();
-    // scroll.scrollToTop();
-    // window.scrollTo(0, 0);
+    dispatch(triggerAnimation(true));
   };
 
   return (
@@ -99,6 +101,8 @@ function Navbar(props) {
           </NavLink>
         </div>
       </div>
+
+      {/* <div className="animation--container"></div> */}
     </motion.header>
   );
 }

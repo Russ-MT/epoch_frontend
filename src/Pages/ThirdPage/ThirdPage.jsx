@@ -20,35 +20,7 @@ function ThirdPage(props) {
         >
           <img src="img/test.jpeg" alt="test" />
           <motion.div className="article">
-            <div className="h1--container" style={{ overflow: "hidden" }}>
-              {/* <motion.h1
-                  className="article--heading targetDiv"
-                  initial={{
-                    y: isInView ? "1000px" : 0,
-                    opacity: isInView ? 0 : 1,
-                  }}
-                  animate={{
-                    y: isInView ? 0 : "1000px",
-                    opacity: isInView ? 1 : 0,
-                  }}
-                  transition={{ duration: 1 }}
-                >
-                  <TypeWriterEffect
-                    startDelay={0}
-                    cursorColor="black"
-                    multiText={[
-                      "LET'S",
-                      "CONNECT",
-                      "THE ....",
-                      "DOTS",
-                      "LET'S CONNECT THE DOTS.",
-                    ]}
-                    multiTextDelay={2000}
-                    typeSpeed={40}
-                    multiTextLoop
-                  />
-                </motion.h1> */}
-            </div>
+            <div className="h1--container" style={{ overflow: "hidden" }}></div>
             <div className="h1--container" style={{ overflow: "hidden" }}>
               <motion.p
                 className="article--description targetDiv"

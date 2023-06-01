@@ -1,1 +1,15 @@
+.home--container {
+  position: relative;
+}
 
+.barba-once-active {
+  transition: opacity 450ms ease;
+}
+
+.barba-once {
+  opacity: 0;
+}
+
+.barba-once-to {
+  opacity: 1;
+}

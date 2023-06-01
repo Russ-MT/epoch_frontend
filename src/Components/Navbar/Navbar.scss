@@ -1,7 +1,7 @@
 header {
   width: 100%;
 
-  position: fixed;
+  // position: fixed;
   /* Center horizontally */
   justify-content: center;
 
@@ -51,72 +51,60 @@ header {
 
 @media (max-width: 500px) {
   header {
-    padding: 5px 5px;
-    .header--container {
+    width: 100%;
+
+    // position: fixed;
+    /* Center horizontally */
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+
+    align-items: center; /* Center vertically */
+    z-index: 9;
+    top: 0;
+    background-color: transparent;
+
+    // opacity: 0.7;
+    .nav--container {
+      display: flex;
+      // background-color: black;
+      width: 100%;
+      padding: 0;
+      margin: 0;
+      // padding: 0 30px;
+      border: 1px solid black;
       .logo {
-        font-size: 25px;
+        // color: rgb(0, 0, 0);
+        font-size: 30px;
+        font-family: "Poppins", sans-serif;
+        margin: 0;
+        padding: 0;
+        border: 1px solid black;
       }
+
       .nav--links {
-        display: none;
+        margin-left: auto;
+        padding-top: 10px;
+        padding-right: 30px;
+        // background-color: red;
+
+        right: 0%;
+        .nav--link {
+          // color: #000000;
+          // margin: 0 3px;
+
+          // font-size: 13px;
+          // font-family: "Questrial", sans-serif;
+          // font-weight: 200;
+          display: none;
+        }
+
+        .nav--link:hover {
+          opacity: 0.5;
+          // color: greenyellow;
+        }
       }
+      // }
     }
   }
 }
-
-// header {
-//   width: 100%;
-//   position: fixed;
-//   top: 0;
-//   z-index: 9;
-
-//   .nav {
-//     &_container {
-//       display: flex;
-//       justify-content: space-between;
-//       align-items: center;
-//       padding: 1rem 5rem;
-//     }
-//     &_logo {
-//       font-size: 3em;
-//     }
-//     &_links {
-//       display: flex;
-//       justify-content: space-between;
-//       width: 20%;
-//     }
-//     &_item {
-//       text-decoration: none;
-//       color: black;
-//     }
-//     &_item:hover {
-//       color: gray;
-//       transition: 0.3s;
-//     }
-//   }
-
-//   .nav {
-//     &_containe--black {
-//       display: flex;
-//       justify-content: space-between;
-//       align-items: center;
-//       padding: 1rem 5rem;
-//     }
-//     &_logo--black {
-//       font-size: 3em;
-//       color: black;
-//     }
-//     &_links-black {
-//       display: flex;
-//       justify-content: space-between;
-//       width: 20%;
-//     }
-//     &_item--black {
-//       text-decoration: none;
-//       color: white;
-//     }
-//     &_item--black:hover {
-//       color: gray;
-//       transition: 0.3s;
-//     }
-//   }
-// }

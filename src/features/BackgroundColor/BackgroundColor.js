@@ -4,6 +4,7 @@ const initialState = {
   bgColor: "white",
   id: "",
   isClicked: false,
+  isAnimation: false,
 };
 
 const bgColorSlice = createSlice({
@@ -22,8 +23,13 @@ const bgColorSlice = createSlice({
       state.id = action.payload.id;
       state.isClicked = action.payload.click;
     },
+
+    triggerAnimation(state, action) {
+      state.isAnimation = action.payload;
+    },
   },
 });
 
-export const { changeBgColor, triggerDetails } = bgColorSlice.actions;
+export const { changeBgColor, triggerDetails, triggerAnimation } =
+  bgColorSlice.actions;
 export default bgColorSlice.reducer;

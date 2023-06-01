@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@barba/core": "^2.9.7",
+    "@barba/css": "^2.1.15",
     "@reduxjs/toolkit": "^1.9.5",
     "@studio-freight/lenis": "^1.0.12",
     "@testing-library/jest-dom": "^5.16.5",
