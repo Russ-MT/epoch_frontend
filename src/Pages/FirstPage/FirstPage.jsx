@@ -50,7 +50,6 @@ function FirstPage(props) {
             </div>
           </div>
           <div className="lower--container">
-            <motion.img src="img/example.webp" alt="test" ref={imgRef} />
             <div className="right--container">
               <motion.p
                 className="first-page--body"
@@ -63,6 +62,7 @@ function FirstPage(props) {
                 solutions - both large and small.
               </motion.p>
             </div>
+            <motion.img src="img/example.webp" alt="test" ref={imgRef} />
           </div>
         </div>
       </motion.div>

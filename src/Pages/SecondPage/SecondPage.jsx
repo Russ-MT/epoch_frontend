@@ -46,11 +46,10 @@ function SecondPage(props) {
               alt="test"
             />
           </div>
-          <div className="image--container--mini">
+          <div className="image--container--mini second--img">
             <img
               src="https://images.unsplash.com/photo-1684577753340-de97c66fa6fd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMDJ8fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=800&q=60"
               alt="test"
-              style={{ marginLeft: "5px" }}
             />
           </div>
         </div>
@@ -72,29 +71,30 @@ function SecondPage(props) {
               <h1 className="num">&rarr;</h1>
             </div>
           </motion.div>
-
-          <motion.div className="card card--four">
-            <h1>"WE'VE GOT TECH GUYS"</h1>
-            <p>
-              We know how to code. Website, Mobile App, Desktop App - you name
-              it. And We are developing util tools for Business Needs.
-            </p>
-            <div className="lower--part">
-              <h1 className="num">02</h1>
-              <h1 className="num">&rarr;</h1>
-            </div>
-          </motion.div>
-          <motion.div className="card card--five">
-            <h1>"WE'VE GOT ARTISTS"</h1>
-            <p>
-              They can draw ofcourse. Character development, 3D , any kind of
-              art.
-            </p>
-            <div className="lower--part">
-              <h1 className="num">03</h1>
-              <h1 className="num">&darr;</h1>
-            </div>
-          </motion.div>
+          <div className="lower--card--container">
+            <motion.div className="card card--four">
+              <h1>"WE'VE GOT TECH GUYS"</h1>
+              <p>
+                We know how to code. Website, Mobile App, Desktop App - you name
+                it. And We are developing util tools for Business Needs.
+              </p>
+              <div className="lower--part">
+                <h1 className="num">02</h1>
+                <h1 className="num">&rarr;</h1>
+              </div>
+            </motion.div>
+            <motion.div className="card card--five">
+              <h1>"WE'VE GOT ARTISTS"</h1>
+              <p>
+                They can draw ofcourse. Character development, 3D , any kind of
+                art.
+              </p>
+              <div className="lower--part">
+                <h1 className="num">03</h1>
+                <h1 className="num">&darr;</h1>
+              </div>
+            </motion.div>
+          </div>
         </div>
       </motion.section>
     </div>

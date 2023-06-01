@@ -43,7 +43,8 @@ function Navbar(props) {
             to="/"
             // onClick={handleNavClick}
             style={({ isActive }) => ({
-              textDecoration: isActive ? "underline" : "none",
+              fontSize: isActive ? "20px" : "15px",
+              fontWeight: isActive ? 300 : 200,
               color: bgColor === "black" ? "white" : "black",
             })}
             className="nav--link"
@@ -55,7 +56,8 @@ function Navbar(props) {
             to="about"
             // onClick={handleNavClick}
             style={({ isActive }) => ({
-              textDecoration: isActive ? "underline" : "none",
+              fontSize: isActive ? "20px" : "15px",
+              fontWeight: isActive ? 300 : 200,
               color: bgColor === "black" ? "white" : "black",
             })}
             className="nav--link"
@@ -67,7 +69,8 @@ function Navbar(props) {
             to="services"
             // onClick={handleNavClick}
             style={({ isActive }) => ({
-              textDecoration: isActive ? "underline" : "none",
+              fontSize: isActive ? "20px" : "15px",
+              fontWeight: isActive ? 300 : 200,
               color: bgColor === "black" ? "white" : "black",
             })}
             className="nav--link"
@@ -79,7 +82,8 @@ function Navbar(props) {
             to="socials"
             // onClick={handleNavClick}
             style={({ isActive }) => ({
-              textDecoration: isActive ? "underline" : "none",
+              fontSize: isActive ? "20px" : "15px",
+              fontWeight: isActive ? 300 : 200,
               color: bgColor === "black" ? "white" : "black",
             })}
             className="nav--link"
@@ -91,7 +95,8 @@ function Navbar(props) {
             to="career"
             // onClick={handleNavClick}
             style={({ isActive }) => ({
-              textDecoration: isActive ? "underline" : "none",
+              fontSize: isActive ? "20px" : "15px",
+              fontWeight: isActive ? 300 : 200,
               color: bgColor === "black" ? "white" : "black",
             })}
             className="nav--link"
