@@ -62,7 +62,12 @@ function FirstPage(props) {
                 solutions - both large and small.
               </motion.p>
             </div>
-            <motion.img src="img/example.webp" alt="test" ref={imgRef} />
+            <div
+              className="img--container
+            "
+            >
+              <motion.img src="img/example.webp" alt="test" ref={imgRef} />
+            </div>
           </div>
         </div>
       </motion.div>

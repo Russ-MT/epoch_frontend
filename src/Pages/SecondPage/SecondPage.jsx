@@ -46,7 +46,7 @@ function SecondPage(props) {
               alt="test"
             />
           </div>
-          <div className="image--container--mini second--img">
+          <div className="image--container--mini " id="second--img">
             <img
               src="https://images.unsplash.com/photo-1684577753340-de97c66fa6fd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMDJ8fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=800&q=60"
               alt="test"

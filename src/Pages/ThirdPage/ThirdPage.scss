@@ -122,8 +122,8 @@
   .third-page {
     height: 50vh;
     background-color: rgb(255, 255, 255);
-
-    margin-top: 5vh;
+    position: relative;
+    margin-top: 30vh;
 
     .third-page--container {
       max-width: 95%;
