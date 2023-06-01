@@ -47,7 +47,7 @@ function AboutFirstPage(props) {
           <motion.img
             src={RightArrow}
             alt=""
-            initial={{ x: isHovered && id === "div1" ? "-1000px" : 0 }}
+            initial={{ x: isHovered && id === "div1" ? "-1000px" : "-500px" }}
             animate={{ x: isHovered && id === "div1" ? 0 : "-1000px" }}
             transition={{ type: "spring", stiffness: 75 }}
             style={{ position: "absolute" }}
@@ -78,7 +78,7 @@ function AboutFirstPage(props) {
           <motion.img
             src={RightArrow}
             alt=""
-            initial={{ x: isHovered && id === "div2" ? "-1000px" : 0 }}
+            initial={{ x: isHovered && id === "div2" ? "-1000px" : "-500px" }}
             animate={{ x: isHovered && id === "div2" ? 0 : "-1000px" }}
             transition={{ type: "spring", stiffness: 75 }}
             style={{ position: "absolute" }}
@@ -109,7 +109,7 @@ function AboutFirstPage(props) {
           <motion.img
             src={RightArrow}
             alt=""
-            initial={{ x: isHovered && id === "div3" ? "-1000px" : 0 }}
+            initial={{ x: isHovered && id === "div3" ? "-1000px" : "-500px" }}
             animate={{ x: isHovered && id === "div3" ? 0 : "-1000px" }}
             transition={{ type: "spring", stiffness: 75 }}
             style={{ position: "absolute" }}

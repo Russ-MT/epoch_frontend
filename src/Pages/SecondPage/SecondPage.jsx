@@ -9,29 +9,31 @@ function SecondPage(props) {
 
   return (
     <div className="second--container" ref={currRef}>
-      <motion.section
-        className="main--container tracked-div"
-        initial={{ y: isInView ? "100px" : 0 }}
-        animate={{ y: isInView ? 0 : "100px" }}
-        transition={{ duration: 1 }}
-      >
-        <div className="left--container">
-          <h1 className="soft--header">DESIGN,</h1>
-          <h1 className="soft--header">STORIES,</h1>
-          <h1 className="soft--header">
-            {" "}
-            <span style={{ color: "rgb(0, 0, 184)" }}> INNOVATIVE</span> &
-            TECHNOLOGY,
-          </h1>
-          <h1 className="main--header">
-            A PLACE FOR EXCITEMENTS&{" "}
-            <span style={{ color: "rgb(0, 0, 184)" }}>EXPERIMENTS</span>{" "}
-          </h1>
-        </div>
-        <div className="right--container">
-          <img src="img/exampleTwo.jpeg" alt="test" />
-        </div>
-      </motion.section>
+      <div className="header--container">
+        <motion.section
+          className="main--container tracked-div"
+          initial={{ y: isInView ? "100px" : 0 }}
+          animate={{ y: isInView ? 0 : "100px" }}
+          transition={{ duration: 1 }}
+        >
+          <div className="left--container">
+            <h1 className="soft--header">DESIGN,</h1>
+            <h1 className="soft--header">STORIES,</h1>
+            <h1 className="soft--header">
+              {" "}
+              <span style={{ color: "rgb(0, 0, 184)" }}> INNOVATIVE</span> &
+              TECHNOLOGY,
+            </h1>
+            <h1 className="main--header">
+              A PLACE FOR EXCITEMENTS&{" "}
+              <span style={{ color: "rgb(0, 0, 184)" }}>EXPERIMENTS</span>{" "}
+            </h1>
+          </div>
+          <div className="right--container">
+            <img src="img/exampleTwo.jpeg" alt="test" />
+          </div>
+        </motion.section>
+      </div>
       <motion.section
         className="second--main--container"
         // initial={{ y: isDivInView ? "100px" : 0 }}
