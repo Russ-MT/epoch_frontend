@@ -69,43 +69,67 @@ header {
     .nav--container {
       display: flex;
       // background-color: black;
-      width: 100%;
+      width: 95%;
       padding: 0;
-      margin: 0;
-      // padding: 0 30px;
-      border: 1px solid black;
+      margin: 0 auto;
+      padding: 10px 0;
+
+      justify-content: space-between;
       .logo {
         // color: rgb(0, 0, 0);
-        font-size: 30px;
+        font-size: 25px;
         font-family: "Poppins", sans-serif;
         margin: 0;
         padding: 0;
-        border: 1px solid black;
+        // border: 1px solid black;
       }
 
       .nav--links {
-        margin-left: auto;
-        padding-top: 10px;
-        padding-right: 30px;
-        // background-color: red;
+        display: none;
 
         right: 0%;
         .nav--link {
-          // color: #000000;
-          // margin: 0 3px;
-
-          // font-size: 13px;
-          // font-family: "Questrial", sans-serif;
-          // font-weight: 200;
           display: none;
         }
 
         .nav--link:hover {
           opacity: 0.5;
-          // color: greenyellow;
+        }
+      }
+
+      .nav--mobile--container {
+        .nav--bar {
+          width: 30px;
+          padding-top: 5px;
         }
       }
       // }
+    }
+    .oval--container {
+      width: 100%;
+      height: 100vh;
+      position: absolute;
+      // top: 0;
+      background-color: white;
+      .nav--links {
+        width: 95%;
+        margin: 0 auto;
+        // border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        .nav--link {
+          font-size: 3rem;
+          text-decoration: none;
+          text-align: center;
+          font-family: "Archivo", sans-serif;
+          font-weight: 700;
+          margin: 10px;
+          background-image: url("https://images.unsplash.com/photo-1567359781514-3b964e2b04d6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8YWJzdHJhY3R8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60");
+          background-clip: text;
+          -webkit-background-clip: text;
+          color: transparent;
+        }
+      }
     }
   }
 }

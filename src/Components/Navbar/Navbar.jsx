@@ -7,11 +7,13 @@ import {
   triggerDetails,
   triggerAnimation,
 } from "../../features/BackgroundColor/BackgroundColor";
-import { animateScroll as scroll } from "react-scroll";
+import Bar from "../../assets/bars.svg";
+import Cross from "../../assets/xmark.svg";
 
 function Navbar(props) {
   const { bgColor } = useSelector((state) => state.bgColor);
   const dispatch = useDispatch();
+  const [isClick, setIsClick] = useState(false);
 
   const triggerDetail = () => {
     dispatch(triggerDetails({ click: false, id: null }));
@@ -105,7 +107,88 @@ function Navbar(props) {
             Careers
           </NavLink>
         </div>
+        <div className="nav--mobile--container">
+          {!isClick && (
+            <img
+              src={Bar}
+              alt="bar"
+              className="nav--bar"
+              onClick={() => setIsClick(true)}
+            />
+          )}
+
+          {isClick && (
+            <img
+              src={Cross}
+              alt="bar"
+              className="nav--bar"
+              onClick={() => setIsClick(false)}
+            />
+          )}
+        </div>
       </div>
+
+      {isClick && (
+        <div className="oval--container">
+          <div className="nav--links">
+            <NavLink
+              to="/"
+              // onClick={handleNavClick}
+              style={({ isActive }) => ({
+                opacity: isActive ? 1 : 0.7,
+              })}
+              className="nav--link"
+              onClick={() => setIsClick(false)}
+            >
+              Home
+            </NavLink>
+            <NavLink
+              to="about"
+              // onClick={handleNavClick}
+              style={({ isActive }) => ({
+                opacity: isActive ? 1 : 0.7,
+              })}
+              className="nav--link"
+              onClick={() => setIsClick(false)}
+            >
+              About
+            </NavLink>
+            <NavLink
+              to="services"
+              // onClick={handleNavClick}
+              style={({ isActive }) => ({
+                opacity: isActive ? 1 : 0.7,
+              })}
+              className="nav--link"
+              onClick={() => setIsClick(false)}
+            >
+              Services
+            </NavLink>
+            <NavLink
+              to="socials"
+              // onClick={handleNavClick}
+              style={({ isActive }) => ({
+                opacity: isActive ? 1 : 0.7,
+              })}
+              className="nav--link"
+              onClick={() => setIsClick(false)}
+            >
+              Socials
+            </NavLink>
+            <NavLink
+              to="career"
+              // onClick={handleNavClick}
+              style={({ isActive }) => ({
+                opacity: isActive ? 1 : 0.7,
+              })}
+              className="nav--link"
+              onClick={() => setIsClick(false)}
+            >
+              Careers
+            </NavLink>
+          </div>
+        </div>
+      )}
 
       {/* <div className="animation--container"></div> */}
     </motion.header>

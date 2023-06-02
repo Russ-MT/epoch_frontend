@@ -5,7 +5,11 @@ import { useRef } from "react";
 
 function SecondPage(props) {
   const currRef = useRef(null);
+  const divRef = useRef(null);
+  const cardRef = useRef(null);
   const isInView = useInView(currRef);
+  const isDivInView = useInView(divRef);
+  const isCardInView = useInView(cardRef);
 
   return (
     <div className="second--container" ref={currRef}>
@@ -39,7 +43,10 @@ function SecondPage(props) {
         // initial={{ y: isDivInView ? "100px" : 0 }}
         // animate={{ y: isDivInView ? 0 : "100px" }}
         // transition={{ duration: 1 }}
-        // ref={divRef}
+        initial={{ y: isDivInView ? "100px" : 0 }}
+        animate={{ y: isDivInView ? 0 : "100px" }}
+        transition={{ duration: 1 }}
+        ref={divRef}
       >
         <div className="image--container">
           <div className="image--container--mini">
@@ -55,7 +62,17 @@ function SecondPage(props) {
             />
           </div>
         </div>
-        <div className="card--container">
+        <div
+          className="card--container"
+          ref={cardRef}
+          initial={{
+            y: isCardInView ? "100px" : 0,
+          }}
+          animate={{
+            y: isCardInView ? 0 : "100px",
+          }}
+          transition={{ duration: 1 }}
+        >
           <div className="card card--one">
             {" "}
             <h1>WHY US?</h1>
@@ -73,6 +90,7 @@ function SecondPage(props) {
               <h1 className="num">&rarr;</h1>
             </div>
           </motion.div>
+
           <div className="lower--card--container">
             <motion.div className="card card--four">
               <h1>"WE'VE GOT TECH GUYS"</h1>
