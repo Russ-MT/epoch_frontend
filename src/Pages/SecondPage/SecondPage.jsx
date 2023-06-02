@@ -18,7 +18,7 @@ function SecondPage(props) {
           className="main--container tracked-div"
           initial={{ y: isInView ? "100px" : 0 }}
           animate={{ y: isInView ? 0 : "100px" }}
-          transition={{ duration: 1 }}
+          transition={{ duration: 0.5 }}
         >
           <div className="left--container">
             <h1 className="soft--header">DESIGN,</h1>
@@ -42,10 +42,10 @@ function SecondPage(props) {
         className="second--main--container"
         // initial={{ y: isDivInView ? "100px" : 0 }}
         // animate={{ y: isDivInView ? 0 : "100px" }}
-        // transition={{ duration: 1 }}
+        // transition={{ duration: 0.5 }}
         initial={{ y: isDivInView ? "100px" : 0 }}
         animate={{ y: isDivInView ? 0 : "100px" }}
-        transition={{ duration: 1 }}
+        transition={{ duration: 0.5 }}
         ref={divRef}
       >
         <div className="image--container">

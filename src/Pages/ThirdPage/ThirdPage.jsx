@@ -14,9 +14,9 @@ function ThirdPage(props) {
       <div className="third-page" ref={currRef}>
         <motion.div
           className="third-page--container"
-          initial={{ y: isInView ? "100px" : 0 }}
-          animate={{ y: isInView ? 0 : "100px" }}
-          transition={{ duration: 1 }}
+          // initial={{ y: isInView ? "100px" : 0 }}
+          // animate={{ y: isInView ? 0 : "100px" }}
+          // transition={{ duration: 1 }}
         >
           <img src="img/test.jpeg" alt="test" />
           <motion.div className="article">
@@ -32,7 +32,7 @@ function ThirdPage(props) {
                   y: isInView ? 0 : "100px",
                   opacity: isInView ? 1 : 0,
                 }}
-                transition={{ duration: 1 }}
+                transition={{ duration: 0.5 }}
               >
                 We believe that the potential of web3 can be realized when we
                 start with imagination, not limitations.No borders,no
@@ -50,7 +50,7 @@ function ThirdPage(props) {
                   y: isInView ? 0 : "100px",
                   opacity: isInView ? 1 : 0,
                 }}
-                transition={{ duration: 1 }}
+                transition={{ duration: 0.5 }}
               >
                 Learn More
                 <img src={arrowRightDown} alt="test" />
