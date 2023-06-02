@@ -65,13 +65,13 @@ function SecondPage(props) {
         <div
           className="card--container"
           ref={cardRef}
-          initial={{
-            y: isCardInView ? "100px" : 0,
-          }}
-          animate={{
-            y: isCardInView ? 0 : "100px",
-          }}
-          transition={{ duration: 1 }}
+          // initial={{
+          //   y: isCardInView ? "100px" : 0,
+          // }}
+          // animate={{
+          //   y: isCardInView ? 0 : "100px",
+          // }}
+          // transition={{ duration: 1 }}
         >
           <div className="card card--one">
             {" "}

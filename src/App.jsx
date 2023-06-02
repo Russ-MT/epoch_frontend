@@ -11,17 +11,17 @@ import Careers from "./Pages/Careers/Careers";
 import Socials from "./Pages/Socials/Socials";
 import ScrollToTop from "./Components/ScrollWrapper/ScrollWrapper";
 
-// const lenis = new Lenis({
-//   duration: 1, // Change the scroll speed
-//   easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-// });
+const lenis = new Lenis({
+  duration: 2, // Change the scroll speed
+  easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+});
 
-// function raf(time) {
-//   lenis.raf(time);
-//   requestAnimationFrame(raf);
-// }
+function raf(time) {
+  lenis.raf(time);
+  requestAnimationFrame(raf);
+}
 
-// requestAnimationFrame(raf);
+requestAnimationFrame(raf);
 
 function App(props) {
   return (
