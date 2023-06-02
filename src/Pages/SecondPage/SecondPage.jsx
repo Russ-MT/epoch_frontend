@@ -16,8 +16,8 @@ function SecondPage(props) {
       <div className="header--container">
         <motion.section
           className="main--container tracked-div"
-          initial={{ y: isInView ? "100px" : 0 }}
-          animate={{ y: isInView ? 0 : "100px" }}
+          initial={{ y: isInView ? "1000px" : 0 }}
+          animate={{ y: isInView ? 0 : "1000px" }}
           transition={{ duration: 0.5 }}
         >
           <div className="left--container">
@@ -40,12 +40,15 @@ function SecondPage(props) {
       </div>
       <motion.section
         className="second--main--container"
+        // initial={{ y: isInView ? "1000px" : 0 }}
+        // animate={{ y: isInView ? 0 : "1000px" }}
+        // transition={{ duration: 1 }}
         // initial={{ y: isDivInView ? "100px" : 0 }}
         // animate={{ y: isDivInView ? 0 : "100px" }}
         // transition={{ duration: 0.5 }}
-        initial={{ y: isDivInView ? "100px" : 0 }}
-        animate={{ y: isDivInView ? 0 : "100px" }}
-        transition={{ duration: 0.5 }}
+        // initial={{ y: isDivInView ? "1000px" : 0 }}
+        // animate={{ y: isDivInView ? 0 : "1000px" }}
+        // transition={{ duration: 0.5 }}
         ref={divRef}
       >
         <div className="image--container">
