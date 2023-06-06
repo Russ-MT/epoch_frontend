@@ -66,7 +66,7 @@ function FirstPage(props) {
               className="img--container
             "
             >
-              <motion.img src="img/example.webp" alt="test" ref={imgRef} />
+              <motion.img src="img/evo.gif" alt="test" ref={imgRef} />
             </div>
           </div>
         </div>
