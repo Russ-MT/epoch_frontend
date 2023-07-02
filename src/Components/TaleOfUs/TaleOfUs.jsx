@@ -7,6 +7,10 @@ function TaleOfUs(props) {
   const id = useSelector((state) => state.bgColor.id);
   const isClick = useSelector((state) => state.bgColor.isClicked);
 
+  const handleContactClick = () => {
+    window.location.href = "mailto:myo111thant@gmail.com";
+  };
+
   return (
     <>
       {id === "about" && isClick && (
@@ -85,12 +89,17 @@ function TaleOfUs(props) {
                 </div>
               </div>
 
-              <div className="detail-card_item detail-card_img">
-                <img
-                  src="https://c4.wallpaperflare.com/wallpaper/108/140/869/digital-digital-art-artwork-fantasy-art-drawing-hd-wallpaper-thumb.jpg"
-                  alt=""
-                />
-              </div>
+              {/* <div className="detail-card_item detail-card_img">
+                <div className="text--container">
+                  <a onClick={handleContactClick}>
+                    <h1 className="contact">Contact Us</h1>
+                  </a>
+                  <h1>
+                    Ready to work with us ? Reach out to discuss how we can help
+                    you build a strong digital brand presence.
+                  </h1>
+                </div>
+              </div> */}
             </div>
           </div>
         </div>

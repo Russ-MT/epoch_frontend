@@ -1,163 +1,222 @@
 // Updated New One
 
 .experiment {
-   &_container {
-      height: 500vh; // Change this to controll horizontal scrolling speed
-      position: relative;
-   }
+  &_container {
+    height: 500vh; // Change this to controll horizontal scrolling speed
+    position: relative;
+  }
 
-   &_container--mobile {
+  &_container--mobile {
+    display: none;
+  }
+
+  &_header {
+    //  text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 5rem;
+    font-family: "Archivo", sans-serif;
+    //  -webkit-text-stroke: 2px #ffffff;
+    font-weight: 800;
+    margin: 30px 0;
+    //  color: transparent;
+    width: 100%;
+    //  border-bottom: 2px solid black;
+    //  background-color: #0040ff;
+    //  border-bottom: 2px solid rgba(0, 0, 0, 0.074);s
+    background-image: url("../../../public/img/textFillOne.jpeg");
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  &_sticky {
+    position: sticky;
+    top: 50px;
+    width: 100%;
+    height: 100vh;
+    // border: 2px solid black;
+    padding: 0rem 5rem;
+  }
+
+  &_list {
+    display: flex;
+    gap: 3rem;
+    // border: 2px solid yellow;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  &_item {
+    position: relative;
+    display: inline-block;
+  }
+
+  &_item:hover &_overlay {
+    opacity: 1;
+  }
+
+  &_img {
+    max-width: 100%;
+    width: 900px;
+    display: block;
+  }
+
+  &_overlay {
+    background: url(https://media.tenor.com/uHVmd0uBuU0AAAAC/bored-ape-yacht-club-nft.gif)
+      no-repeat center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    color: #fff;
+    font-family: "Questrial", sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    box-sizing: border-box;
+    padding: 2rem 2.5rem 0;
+  }
+
+  &_overlay--discover {
+    text-decoration: none;
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: white;
+  }
+
+  &_item--link {
+    height: 10%;
+    width: 100%;
+    background-color: rgba($color: black, $alpha: 0.5);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    align-self: flex-end;
+  }
+}
+
+@media (max-width: 1000px) {
+  .experiment {
+    &_container {
       display: none;
-   }
+    }
 
-   &_header {
-      //  text-align: center;
-      display: flex;
-      flex-wrap: wrap;
-      font-size: 5rem;
-      font-family: "Archivo", sans-serif;
-      //  -webkit-text-stroke: 2px #ffffff;
-      font-weight: 800;
-      margin: 30px 0;
-      //  color: transparent;
-      width: 100%;
-      //  border-bottom: 2px solid black;
-      //  background-color: #0040ff;
-      //  border-bottom: 2px solid rgba(0, 0, 0, 0.074);s
-      background-image: url("../../../public/img/textFillOne.jpeg");
-      background-clip: text;
-      -webkit-background-clip: text;
-      color: transparent;
-   }
-
-   &_sticky {
-      position: sticky;
-      top: 50px;
-      width: 100%;
-      height: 100vh;
-      // border: 2px solid black;
-      padding: 0rem 5rem;
-   }
-
-   &_list {
-      display: flex;
-      gap: 3rem;
-      // border: 2px solid yellow;
-      width: 100%;
-      box-sizing: border-box;
-   }
-
-   &_item {
-      position: relative;
-      display: inline-block;
-   }
-
-   &_item:hover &_overlay {
+    &_overlay {
       opacity: 1;
-   }
+      background: none;
+    }
 
-   &_img {
-      max-width: 100%;
-      width: 900px;
+    &_container--mobile {
       display: block;
-   }
+      position: relative;
+      text-align: center;
+      font-family: "Questrial", sans-serif;
+    }
 
-   &_overlay {
-      background: url(https://media.tenor.com/uHVmd0uBuU0AAAAC/bored-ape-yacht-club-nft.gif)
-         no-repeat center;
-      background-size: cover;
+    &_list--mobile {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &_item--mobile {
+      width: 100vw;
+      height: 70vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      width: 80%;
+
+      img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+      }
+    }
+
+    &_description--mobile {
       position: absolute;
       top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      border-radius: 20px;
-      color: #fff;
-      font-family: "Questrial", sans-serif;
       display: flex;
-      flex-wrap: wrap;
+      color: white;
+      font-size: 2rem;
       justify-content: space-between;
-      align-items: flex-start;
-      opacity: 0;
-      transition: opacity 0.3s ease;
-      box-sizing: border-box;
-      padding: 2rem 2.5rem 0;
-   }
-
-   &_overlay--discover {
-      text-decoration: none;
-      font-size: 1.7rem;
-      font-weight: 600;
-      color: white;
-   }
-
-   &_item--link {
-      height: 10%;
-      width: 100%;
-      background-color: rgba($color: black, $alpha: 0.5);
-      color: white;
-      display: flex;
       align-items: center;
-      justify-content: space-around;
-      align-self: flex-end;
-   }
+      height: 20%;
+      width: 90%;
+    }
+  }
 }
 
 @media (max-width: 700px) {
-   .experiment {
-      &_container {
-         display: none;
-      }
+  .experiment {
+    &_container {
+      display: none;
+    }
 
-      &_overlay {
-        opacity: 1;
-        background: none;
-      }
+    &_overlay {
+      opacity: 1;
+      background: none;
+    }
 
-      &_container--mobile {
-         display: block;
-         position: relative;
-         text-align: center;
-         font-family: "Questrial", sans-serif;
-      }
+    &_container--mobile {
+      display: block;
+      position: relative;
+      text-align: center;
+      font-family: "Questrial", sans-serif;
+    }
 
-      &_list--mobile {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
+    &_list--mobile {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
 
-      &_item--mobile {
-         width: 100vw;
-         height: 70vh;
-         display: flex;
-         justify-content: center;
-         align-items: center;
-         position: sticky;
-         top: 0;
-         width: 80%;
+    &_item--mobile {
+      width: 100vw;
+      height: 70vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      width: 80%;
 
-         img {
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: auto;
-            border-radius: 20px;
-         }
+      img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
       }
+    }
 
-      &_description--mobile {
-         position: absolute;
-         top: 0;
-         display: flex;
-         color: white;
-         font-size: 2rem;
-         justify-content: space-between;
-         align-items: center;
-         height: 20%;
-         width: 90%;
-      }
-   }
+    &_description--mobile {
+      position: absolute;
+      top: 0;
+      display: flex;
+      color: white;
+      font-size: 2rem;
+      justify-content: space-between;
+      align-items: center;
+      height: 20%;
+      width: 90%;
+    }
+  }
 }
