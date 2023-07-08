@@ -114,7 +114,7 @@ function AboutFirstPage(props) {
             transition={{ type: "spring", stiffness: 75 }}
             style={{ position: "absolute" }}
           />
-          <motion.div
+          {/* <motion.div
             id="timeline"
             className="main--links"
             initial={{ x: isHovered && id === "div3" ? "-1000px" : 0 }}
@@ -123,7 +123,7 @@ function AboutFirstPage(props) {
             onClick={clickTrigger}
           >
             THE TIMELINE
-          </motion.div>
+          </motion.div> */}
         </div>
       </motion.div>
     </>
